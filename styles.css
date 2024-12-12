@@ -1,0 +1,274 @@
+*{
+font-family: "Space Grotesk"; 
+}
+    
+body {
+margin: 0;
+font-family: monospace;
+background: linear-gradient(to right, #222, #444); /* Mock background content */
+height: 100vh; /* Make the page scrollable */
+overflow-y: scroll; 
+color: white;
+}
+
+/*.Content-CodeEditor{
+top: 100px;
+}*/
+
+.DinoGameCode{
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute; 
+top: 125px;
+width: 100%;
+/*overflow-y: scroll;*/
+flex-direction: column; 
+/*margin-bottom: 16px;*/
+padding: 30px 0; 
+} 
+
+.FileTabContainer{
+width: 1122px;
+display: flex;
+align-items: left;
+justify-content: space-between; 
+/*padding-left: 337px; */
+} 
+
+.PreTags{
+width: 1090px;
+}
+
+.UsefulBtns{
+display: flex;
+align-items: center;
+justify-content: center; 
+background-color: rgba(0,0,0,0);
+border: none;
+outline: none;
+cursor: pointer;
+}  
+
+.FileTab{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #2d2d2d;
+border-radius: 15px; 
+font-size: 25px;
+padding: 15px; 
+gap: 10px;
+}
+
+.TabImg{
+width: 25px;
+}
+
+.Imgs{
+width: 17px;
+}
+
+.Logos{
+width: 20px;
+}
+
+#RunImage {
+width: 15px; /* Adjust the size of the image */
+}
+
+#Run {
+display: flex; /* Align items horizontally */
+align-items: center; /* Vertically centers the button and image */
+gap: 10px; /* Adds space between the button and the image */
+justify-content: space-between; 
+padding: 10px 20px;
+font-size: 20px;
+font-weight: bold;
+color: #72d582;
+background-color: #044910;
+border: none;
+outline: none;
+border-radius: 15px;
+cursor: pointer;
+} 
+
+/* Menu Button */
+#Menu {
+position: relative; /* Back to relative positioning within TopDiv */
+z-index: 1100; /* Ensures it is still above other elements */
+background: none;
+border: none;
+cursor: pointer;
+}
+
+/* Sidebar container */
+.sidebar {
+position: fixed;
+top: 0;
+left: -41%; /* Initially hidden (off-screen) */
+width: 400px; /* Takes up 40% of the screen width */
+height: 100vh; /* Full screen height */
+background-color: rgb(44, 52, 68);
+color: white;
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+z-index: 1000;
+overflow-y: auto; /* Make the sidebar scrollable if content overflows */
+transition: left 0.3s ease-in-out; /* Smooth slide animation */
+}
+
+/* Sidebar menu items */
+.sidebar-menu {
+list-style-type: none;
+margin: 0;
+padding: 20px;
+/*font-family: "Space Grotesk", sans-serif;*/
+font-size: 20px;
+font-weight: normal;
+}
+
+.Files{
+margin: 15px 25px;
+cursor: pointer;
+display: flex;
+align-items: center;
+/*justify-items: space-between;
+flex-direction: row; */
+gap: 10px;
+}
+
+.sidebar-menu li:hover {
+color: #72d582; /* Highlight menu items on hover */
+}
+
+#Html{
+margin-top: 40px;
+}
+    
+/*#Run{
+margin-top: 85px;
+margin-left: 70px; 
+}*/
+
+.CodeEditorDesigns{
+background-color: rgb(44, 52, 68);
+}
+
+/* TopDiv */
+.TopDiv {
+width: 100%;
+height: 70px;
+background-color: rgb(44, 52, 68);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 15px;
+box-sizing: border-box;
+position: fixed;
+top: 0;
+z-index: 100;
+}
+    
+.console-overlay {
+position: fixed;
+display: none; 
+width: 100%;
+height: 50vh; /* Takes 50% of the screen height */
+bottom: 0; /* Sticks to the bottom of the viewport */
+background-color: rgba(43,43,43);
+overflow-y: auto; /* Scrollable content inside */
+overflow-x: hidden;
+z-index: 1000; 
+}
+
+/* Fixed title bar */
+.console-title {
+position: sticky; /* Keeps it at the top of the console */
+top: 0;
+height: 70px;
+background-color: rgb(44, 52, 68);
+display: flex; /* Enables Flexbox */
+align-items: center; /* Vertically centers the text */
+justify-content: space-between; /* Horizontally centers the text */
+padding: 10px;
+text-align: left;
+font-weight: bold;
+z-index: 10;
+color: rgb(255, 255, 255);
+font-size: 25px; 
+}
+.console-button{
+margin: 5px 20px;
+padding:10px 25px;
+color: white;
+background-color: rgb(235,60,60);
+/*font: "Space Grotesk",sans-serif;*/
+font-size: 20px;
+font-weight: bold;
+border: none;
+border-radius: 15px;
+outline:none;
+}
+/* Console content area */
+.console-content {
+color: #0f0;
+}
+
+/* Console text lines */
+.console-line {
+white-space: pre-wrap;
+word-wrap: break-word;
+}
+
+#iframeContainer{
+display: flex;
+align-items:center;
+justify-content: center;
+}
+    
+#WindowOutput{
+border:none;
+width:80%;
+height:350px;
+background-color: white;
+}
+
+#glasspane{
+position: fixed;
+width:  100vw;
+height: 100vh;
+top: 0;
+background-color: rgba(0,0,0,0.2);
+backdrop-filter: blur(7px);
+display: none;
+z-index: 50; 
+}
+
+.folder{
+margin-left: 25px;
+}
+
+.folder-contents{
+background-color: white; 
+} 
+
+#OpenImg{
+display: none;
+z-index: 100;
+}
+
+#CloseImg{
+z-index: 100;
+margin-right: 10px;
+}
+
+.folder-contents{
+padding: 5px 5px; 
+} 
+
+.folder-menu{
+list-style-type: none;
+margin: 0;
+font-size: 15px;
+font-weight: normal;
+}
