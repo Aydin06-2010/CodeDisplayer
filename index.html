@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Console Window with Transparency</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div class = TopDiv CodeEditorDesigns>  
+
+<button id=Menu class=UsefulBtns><img src=BtnImgs/MenuBtn.png id=MenuImg class=Imgs></button>
+
+<div id="Sidebar" class="sidebar">
+<ul class="sidebar-menu">
+<li id=Html class=Files><img src=Logos/HTML5.png class=Logos>index.html</li>
+    
+<li id=Css class=Files><img src=Logos/CSS3.png class=Logos>styles.css</li>
+
+<li id=CactusJs class=Files><img src=Logos/JS.png class=Logos>cactus.js</li>
+
+<li id=DinoJs class=Files><img src=Logos/JS.png class=Logos>dino.js</li>
+
+<li id=GroundJs class=Files><img src=Logos/JS.png class=Logos>ground.js</li>
+
+<li id=ScriptJs class=Files><img src=Logos/JS.png class=Logos>script.js</li>
+
+<li id=UpdateCustomPropertyJs class=Files><img src=Logos/JS.png class=Logos>updateCustomProperty.js</li>
+
+<li id=Folder class=folder>
+<img src=Logos/ClosedFolder.png class=Logos id=CloseImg><img src=Logos/OpenFolder.png class=Logos id=OpenImg>
+imgs
+<div class=folder-contents>
+<ul class=folder-menu>
+<li class=folder-imgs><img src=Logos/ImageIcon.png class=Logos>cactus.png</li>
+<li class=folder-imgs><img src=Logos/ImageIcon.png class=Logos>dino-lose.png</li>
+<li class=folder-imgs><img src=Logos/ImageIcon.png class=Logos>dino-run-0.png</li>
+<li class=folder-imgs><img src=Logos/ImageIcon.png class=Logos>dino-run-1.png</li>
+<li class=folder-imgs><img src=Logos/ImageIcon.png class=Logos>dino-stationary.png</li>
+<li class=folder-imgs><img src=Logos/ImageIcon.png class=Logos>ground.png</li>
+
+    
+</ul>
+</div></li>
+</ul>
+    
+</div>
+    
+<button id=Run>
+<img src=BtnImgs/RunBtn.png id=RunImage>Run
+</button>
+
+<button id= Home class=UsefulBtns><img src=BtnImgs/HomeBtn.png id=HomeImg class=Imgs></button>
+
+</div>
+
+<div id=HTMLCode class=DinoGameCode>
+<div class=FileTabContainer>
+<div class=FileTab><img src=Logos/HTML5.png class=TabImg>index.html</div>
+</div>
+<pre class=PreTags><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+  &lt;link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"&gt;
+  &lt;script src="script.js" type="module"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="world" data-world&gt;
+    &lt;div class="score" data-score&gt;0&lt;/div&gt;
+    &lt;div class="start-screen" data-start-screen&gt;Press Any Key To Start&lt;/div&gt;
+    &lt;img src="imgs/ground.png" class="ground" data-ground&gt;
+    &lt;img src="imgs/ground.png" class="ground" data-ground&gt;
+    &lt;img src="imgs/dino-stationary.png" class="dino" data-dino&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</div>
+
+
+    
+<div id=CSSCode class=DinoGameCode>
+<div class=FileTabContainer>
+
+<div class=FileTab><img src=Logos/CSS3.png class=TabImg>styles.css</div>
+
+</div>
+
+<pre class=PreTags><code class="language-css">
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.world {
+  overflow: hidden;
+  position: relative;
+}
+
+.score {
+  position: absolute;
+  font-family: "Space Grotesk"; 
+  font-size: 3vmin;
+  right: 1vmin;
+  top: 1vmin;
+}
+
+.start-screen {
+  position: absolute;
+  font-family: "Space Grotesk"; 
+  font-size: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  --left: 0;
+  position: absolute;
+  width: 300%;
+  bottom: 0;
+  left: calc(var(--left) * 1%)
+}
+
+.dino {
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 30%;
+  bottom: 0;
+}
+</code></pre>
+</div>
+<div id=CactusJSCode class=DinoGameCode>
+<div class=FileTabContainer>
+
+<div class=FileTab><img src=Logos/JS.png class=TabImg>cactus.js</div>
+
+</div>
+
+<pre class=PreTags><code class=language-javascript>
+document.addEventListener("contextmenu", function(event) {
+    event.preventDefault(); 
+});
+import {
+  setCustomProperty,
+  incrementCustomProperty,
+  getCustomProperty,
+} from "./updateCustomProperty.js"
+
+const SPEED = 0.05
+const CACTUS_INTERVAL_MIN = 500
+const CACTUS_INTERVAL_MAX = 2000
+const worldElem = document.querySelector("[data-world]")
+
+let nextCactusTime
+export function setupCactus() {
+  nextCactusTime = CACTUS_INTERVAL_MIN
+  document.querySelectorAll("[data-cactus]").forEach(cactus => {
+    cactus.remove()
+  })
+}
+
+export function updateCactus(delta, speedScale) {
+  document.querySelectorAll("[data-cactus]").forEach(cactus => {
+    incrementCustomProperty(cactus, "--left", delta * speedScale * SPEED * -1)
+    if (getCustomProperty(cactus, "--left") <= -100) {
+      cactus.remove()
+    }
+  })
+
+  if (nextCactusTime <= 0) {
+    createCactus()
+    nextCactusTime =
+      randomNumberBetween(CACTUS_INTERVAL_MIN, CACTUS_INTERVAL_MAX) / speedScale
+  }
+  nextCactusTime -= delta
+}
+
+export function getCactusRects() {
+  return [...document.querySelectorAll("[data-cactus]")].map(cactus => {
+    return cactus.getBoundingClientRect()
+  })
+}
+
+function createCactus() {
+  const cactus = document.createElement("img")
+  cactus.dataset.cactus = true
+  cactus.src = "imgs/cactus.png"
+  cactus.classList.add("cactus")
+  setCustomProperty(cactus, "--left", 100)
+  worldElem.append(cactus)
+}
+
+function randomNumberBetween(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+</code></pre>
+</div>
+  
+<div id=DinoJSCode class=DinoGameCode>
+<div class=FileTabContainer>
+
+<div class=FileTab><img src=Logos/JS.png class=TabImg>dino.js</div>
+
+</div>
+
+<pre class=PreTags><code class=language-javascript>
+import {
+  incrementCustomProperty,
+  setCustomProperty,
+  getCustomProperty,
+} from "./updateCustomProperty.js"
+
+const dinoElem = document.querySelector("[data-dino]")
+const JUMP_SPEED = 0.45
+const GRAVITY = 0.0015
+const DINO_FRAME_COUNT = 2
+const FRAME_TIME = 100
+
+let isJumping
+let dinoFrame
+let currentFrameTime
+let yVelocity
+
+export function setupDino() {
+  isJumping = false
+  dinoFrame = 0
+  currentFrameTime = 0
+  yVelocity = 0
+  setCustomProperty(dinoElem, "--bottom", 0)
+
+  // Remove existing listeners to avoid duplication
+  document.removeEventListener("keydown", onJump)
+  document.removeEventListener("touchstart", onTouchJump)
+
+  // Add key and touch event listeners
+  document.addEventListener("keydown", onJump)
+  document.addEventListener("touchstart", onTouchJump)
+  document.addEventListener("contextmenu", function(e) {
+    e.preventDefault(); 
+});
+  
+}
+
+export function updateDino(delta, speedScale) {
+  handleRun(delta, speedScale)
+  handleJump(delta)
+}
+
+export function getDinoRect() {
+  return dinoElem.getBoundingClientRect()
+}
+
+export function setDinoLose() {
+  dinoElem.src = "imgs/dino-lose.png"
+}
+
+function handleRun(delta, speedScale) {
+  if (isJumping) {
+    dinoElem.src = `imgs/dino-stationary.png`
+    return
+  }
+
+  if (currentFrameTime >= FRAME_TIME) {
+    dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT
+    dinoElem.src = `imgs/dino-run-${dinoFrame}.png`
+    currentFrameTime -= FRAME_TIME
+  }
+  currentFrameTime += delta * speedScale
+}
+
+function handleJump(delta) {
+  if (!isJumping) return
+
+  incrementCustomProperty(dinoElem, "--bottom", yVelocity * delta)
+
+  if (getCustomProperty(dinoElem, "--bottom") <= 0) {
+    setCustomProperty(dinoElem, "--bottom", 0)
+    isJumping = false
+  }
+
+  yVelocity -= GRAVITY * delta
+}
+
+// Keydown event for desktop
+function onJump(e) {
+  if (e.code !== "Space" || isJumping) return
+
+  startJump()
+}
+
+// Touchstart event for mobile
+function onTouchJump(e) {
+  startJump()
+}
+
+// Shared jump logic
+function startJump() {
+  if (isJumping) return
+  yVelocity = JUMP_SPEED
+  isJumping = true
+}
+</code></pre>
+
+</div>
+
+<div id=GroundJSCode class=DinoGameCode>
+<div class=FileTabContainer>
+
+<div class=FileTab><img src=Logos/JS.png class=TabImg>ground.js</div>
+
+</div>
+
+<pre class=PreTags><code class=language-javascript>
+import {
+  getCustomProperty,
+  incrementCustomProperty,
+  setCustomProperty,
+} from "./updateCustomProperty.js"
+
+const SPEED = 0.05
+const groundElems = document.querySelectorAll("[data-ground]")
+
+export function setupGround() {
+  setCustomProperty(groundElems[0], "--left", 0)
+  setCustomProperty(groundElems[1], "--left", 300)
+  document.addEventListener("contextmenu", function(e) {
+    e.preventDefault(); 
+});
+}
+
+export function updateGround(delta, speedScale) {
+  groundElems.forEach(ground => {
+    incrementCustomProperty(ground, "--left", delta * speedScale * SPEED * -1)
+
+    if (getCustomProperty(ground, "--left") <= -300) {
+      incrementCustomProperty(ground, "--left", 600)
+    }
+  })
+}
+</code></pre>
+</div>
+
+<div id=ScriptJSCode class=DinoGameCode>
+<div class=FileTabContainer>
+
+<div class=FileTab><img src=Logos/JS.png class=TabImg>script.js</div>
+
+</div>
+
+<pre class=PreTags><code class=language-javascript>
+import { updateGround, setupGround } from "./ground.js";
+import { updateDino, setupDino, getDinoRect, setDinoLose } from "./dino.js";
+import { updateCactus, setupCactus, getCactusRects } from "./cactus.js";
+
+const WORLD_WIDTH = 100;
+const WORLD_HEIGHT = 30;
+const SPEED_SCALE_INCREASE = 0.00001;
+
+const worldElem = document.querySelector("[data-world]");
+const scoreElem = document.querySelector("[data-score]");
+const startScreenElem = document.querySelector("[data-start-screen]");
+
+setPixelToWorldScale();
+window.addEventListener("resize", setPixelToWorldScale);
+
+let lastTime;
+let speedScale;
+let score;
+let gameRunning = false; // Flag to track if the game is already running
+
+// Add both touch and keyboard event listeners
+document.addEventListener("touchstart", handleStart);
+document.addEventListener("keydown", handleStart);
+
+function update(time) {
+  if (lastTime == null) {
+    lastTime = time;
+    window.requestAnimationFrame(update);
+    return;
+  }
+  const delta = time - lastTime;
+
+  updateGround(delta, speedScale);
+  updateDino(delta, speedScale);
+  updateCactus(delta, speedScale);
+  updateSpeedScale(delta);
+  updateScore(delta);
+
+  if (checkLose()) return handleLose();
+
+  lastTime = time;
+  window.requestAnimationFrame(update);
+}
+
+function checkLose() {
+  const dinoRect = getDinoRect();
+  return getCactusRects().some((rect) => isCollision(rect, dinoRect));
+}
+
+function isCollision(rect1, rect2) {
+  return (
+    rect1.left < rect2.right &&
+    rect1.top < rect2.bottom &&
+    rect1.right > rect2.left &&
+    rect1.bottom > rect2.top
+  );
+}
+
+function updateSpeedScale(delta) {
+  speedScale += delta * SPEED_SCALE_INCREASE;
+}
+
+function updateScore(delta) {
+  score += delta * 0.01;
+  scoreElem.textContent = Math.floor(score);
+}
+
+function handleStart(e) {
+  if (gameRunning) return; // Prevent restarting the game if it's already running
+
+  // Only start the game on a valid input
+  if (e.type === "keydown" && e.key !== " ") return;
+
+  gameRunning = true; // Mark the game as running
+  lastTime = null;
+  speedScale = 1;
+  score = 0;
+
+  setupGround();
+  setupDino();
+  setupCactus();
+  startScreenElem.classList.add("hide");
+
+  window.requestAnimationFrame(update);
+}
+
+function handleLose() {
+  setDinoLose();
+  gameRunning = false; // Allow restarting the game
+  setTimeout(() => {
+    startScreenElem.classList.remove("hide");
+  }, 100);
+}
+
+function setPixelToWorldScale() {
+  let worldToPixelScale;
+  if (window.innerWidth / window.innerHeight < WORLD_WIDTH / WORLD_HEIGHT) {
+    worldToPixelScale = window.innerWidth / WORLD_WIDTH;
+  } else {
+    worldToPixelScale = window.innerHeight / WORLD_HEIGHT;
+  }
+
+  worldElem.style.width = `${WORLD_WIDTH * worldToPixelScale}px`;
+  worldElem.style.height = `${WORLD_HEIGHT * worldToPixelScale}px`;
+}
+</code></pre>
+</div>
+
+<div id=UpdateCustomPropertyJSCode class=DinoGameCode>
+<div class=FileTabContainer>
+
+<div class=FileTab><img src=Logos/JS.png class=TabImg>updateCustomProperty.js</div>
+
+</div>
+
+<pre class=PreTags><code class=language-javascript>
+export function getCustomProperty(elem, prop) {
+  return parseFloat(getComputedStyle(elem).getPropertyValue(prop)) || 0
+}
+
+export function setCustomProperty(elem, prop, value) {
+  elem.style.setProperty(prop, value)
+}
+
+export function incrementCustomProperty(elem, prop, inc) {
+  setCustomProperty(elem, prop, getCustomProperty(elem, prop) + inc)
+}
+</code></pre>
+</div>
+
+<div id=glasspane></div>
+
+<!--<pre id="pre"><code class="language-css">/* Example CSS code */
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #00f; /* light blue for selectors */
+    font-size: 24px;
+}
+
+p {
+    color: lime; /* lime for values */
+    margin: 20px;
+    padding: 10px;
+}
+
+a:hover {
+    color: red; /* red for properties */
+    text-decoration: underline;
+}
+</code></pre>
+</div>-->
+    
+<div class="console-overlay">
+
+<div class="console-title">Transparent Console - Fixed Title
+<button class="console-button">Close</button>
+</div>
+
+<div class="console-content">
+<div class="console-line">Line 1: Scroll the page behind this console.</div>
+<div class="console-line">Line 2: This content is inside the semi-transparent console.</div>
+<div id=iframeContainer>
+<iframe id="WindowOutput" src="https://aydin06-2010.github.io/Dino/"></iframe>
+</div>
+
+</div>
+</div>
+<script src=script.js></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    
+</body>
+</html>
