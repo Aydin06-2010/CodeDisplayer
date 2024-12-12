@@ -290,4 +290,9 @@ UpdateScreenDimensions(); // Call the function after a delay
 }
 // Add event listeners
 window.addEventListener("resize", handleResize);
-window.addEventListener("orientationchange", handleResize); 
+window.addEventListener("orientationchange", handleResize);
+
+document.querySelector('#Folder').addEventListener('click', function () {
+    const folderContents = this.querySelector('.folder-contents');
+    folderContents.style.display = folderContents.style.display === 'block' ? 'none' : 'block';
+});
