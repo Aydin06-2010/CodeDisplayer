@@ -258,8 +258,21 @@ display: none;
 z-index: 100;
 }
 
-.folder-contents{
+/*.folder-contents{
 background-color: blue; 
+}*/
+
+.folder-contents {
+  background-color: blue;
+  max-height: 0; /* Initially collapsed */
+  overflow: hidden; /* Hide content when collapsed */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth animation */
+  opacity: 0; /* Invisible initially */
+}
+
+.folder-contents.open {
+  max-height: 500px; /* Adjust based on your content size */
+  opacity: 1; /* Fully visible when expanded */
 }
 
 .folder-menu{
