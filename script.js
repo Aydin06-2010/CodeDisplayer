@@ -136,20 +136,11 @@ UpdateCustomPropertyJs.onclick = function(){
 SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode"); 
 }
 
-/*Folder.onclick = function(){
+Folder.onclick = function(){
 Folder.style.color = "#72a9d5";
 OpenFolderImg.style.display = "block";
 CloseFolderImg.style.display = "none"; 
-}*/
-
-Folder.onclick = function () {
-  Folder.style.color = "#72a9d5";
-  OpenFolderImg.style.display = "block";
-  CloseFolderImg.style.display = "none";
-
-  const folderContents = document.querySelector(".folder-contents");
-  folderContents.classList.toggle("open"); // Toggle the 'open' class
-};
+}
 
 function SelectedFile(ElementID,DivID){
 HideAllDiv();
