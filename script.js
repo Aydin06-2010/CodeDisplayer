@@ -97,6 +97,11 @@ const GroundJsDiv = document.getElementById("GroundJSCode");
 const ScriptJsDiv = document.getElementById("ScriptJSCode"); 
 const UpdateCustomPropertyJsDiv = document.getElementById("UpdateCustomPropertyJSCode"); 
 
+
+const OpenFolderImg = document.getElementById("OpenFolder");
+const CloseFolderImg = document.getElementById("CloseFolder");  
+const isFolderOpen = false;
+
 HideAllDiv();
 ResetColors();
 
@@ -133,6 +138,8 @@ SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode");
 
 Folder.onclick = function(){
 Folder.style.color = "#72a9d5";
+OpenFolderImg.style.display = "block";
+CloseFolderImg.style.display = "none"; 
 }
 
 function SelectedFile(ElementID,DivID){
