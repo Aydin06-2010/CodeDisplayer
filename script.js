@@ -142,12 +142,12 @@ Element.style.color = "#72a9d5";
 
 function HideAllDiv(){
 document.getElementById("HTMLCode").style.display = "none";
-CssDiv.style.display = "none";
-CactusJsDiv.style.display = "none";
-DinoJsDiv.style.display = "none";
-GroundJsDiv.style.display = "none";
-ScriptJsDiv.style.display = "none";
-UpdateCustomPropertyJsDiv.style.display = "none";
+document.getElementById("CSSCode").style.display = "none";
+document.getElementById("CactusJSCode").style.display = "none";
+document.getElementById("DinoJSCode").style.display = "none";
+document.getElementById("GroundJSCode").style.display = "none";
+document.getElementById("ScriptJSCode").style.display = "none";
+document.getElementById("UpdateCustomPropertyJSCode") .style.display = "none";
 }
 
 function ResetColors(){
