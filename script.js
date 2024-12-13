@@ -131,13 +131,13 @@ SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode");
 }
 
 function SelectedFile(ElementID,DivID){
+HideAllDiv();
+ResetColors(); 
+CloseSideBar(); 
 const Element = document.getElementById(ElementID);
 const DivElement = document.getElementById(DivID); 
 DivElement.style.display = "flex";
 Element.style.color = "#72a9d5"; 
-HideAllDiv();
-ResetColors(); 
-CloseSideBar(); 
 }
 
 function HideAllDiv(){
