@@ -127,7 +127,7 @@ font-size: 20px;
 font-weight: normal;
 }
 
-.sidebar-menu li{
+.Files{
 margin: 15px 25px;
 cursor: pointer;
 display: flex;
@@ -242,4 +242,8 @@ background-color: rgba(0,0,0,0.2);
 backdrop-filter: blur(7px);
 display: none;
 z-index: 50; 
+}
+
+.folder{
+background-color: white; 
 }
