@@ -250,12 +250,12 @@ padding-left: 25px;
 
 #OpenFolder{
 display: none;
-z-index: 100;
+z-index: 5;
 }
 
 #CloseFolder{
 display: none;
-z-index: 100;
+z-index: 10;
 }
 
 .folder-menu{
