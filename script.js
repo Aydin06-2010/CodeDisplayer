@@ -101,57 +101,44 @@ ResetColors();
 
 
 HtmlCode.onclick = function(){
-HideAllDiv();
-ResetColors()
-SelectedFile("Html"); 
-HtmlDiv.style.display = "flex";
+SelectedFile("Html" , "HTMLCode"); 
 } 
 
 
 CssCode.onclick = function(){
-HideAllDiv();
-ResetColors(); 
-SelectedFile("Css"); 
-CssDiv.style.display = "flex";
+SelectedFile("Css" , "CSSCode"); 
 } 
 
 
 CactusJs.onclick = function(){
-HideAllDiv();
-ResetColors(); 
-SelectedFile("CactusJs"); 
-CactusJsDiv.style.display = "flex";
+SelectedFile("CactusJs" , "CactusJSCode"); 
 } 
 
 DinoJs.onclick = function(){
-HideAllDiv();
-ResetColors(); 
-SelectedFile("DinoJs"); 
-DinoJsDiv.style.display = "flex";
+SelectedFile("DinoJs" , "DinoJSCode"); 
 }
 
 GroundJs.onclick = function(){
-HideAllDiv();
-ResetColors(); 
-SelectedFile("GroundJs"); 
-GroundJsDiv.style.display = "flex";
+SelectedFile("GroundJs" , "GroundJSCode"); 
 }
 
 ScriptJs.onclick = function(){
-HideAllDiv();
-ResetColors(); 
-SelectedFile("ScriptJs"); 
-ScriptJsDiv.style.display = "flex";
+SelectedFile("ScriptJs" , "ScriptJSCode"); 
 }
 
 UpdateCustomPropertyJs.onclick = function(){
-HideAllDiv();
-ResetColors(); 
-SelectedFile("UpdateCustomPropertyJs"); 
-UpdateCustomPropertyJsDiv.style.display = "flex";
+SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode"); 
 }
 
-
+function SelectedFile(ElementID,DivID){
+const Element = document.getElementById(ElementID);
+const DivElement = document.getElementById(DivID); 
+DivElement.style.display = "flex";
+Element.style.color = "#72a9d5"; 
+HideAllDiv();
+ResetColors(); 
+CloseSideBar(); 
+}
 
 function HideAllDiv(){
 HtmlDiv.style.display = "none";
@@ -162,13 +149,6 @@ GroundJsDiv.style.display = "none";
 ScriptJsDiv.style.display = "none";
 UpdateCustomPropertyJsDiv.style.display = "none";
 }
-
-function SelectedFile(ElementID){
-const Element = document.getElementById(ElementID); 
-console.log(ElementID); 
-Element.style.color = "#72a9d5"; 
-CloseSideBar(); 
-}  
 
 function ResetColors(){
 HtmlCode.style.color = "";
