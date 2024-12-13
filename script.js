@@ -87,6 +87,7 @@ const DinoJs = document.getElementById("DinoJs");
 const GroundJs = document.getElementById("GroundJs"); 
 const ScriptJs = document.getElementById("ScriptJs"); 
 const UpdateCustomPropertyJs = document.getElementById("UpdateCustomPropertyJs"); 
+const Folder = document.getElementById("Folder");
 
 const HtmlDiv = document.getElementById("HTMLCode");
 const CssDiv = document.getElementById("CSSCode");
@@ -128,6 +129,10 @@ SelectedFile("ScriptJs" , "ScriptJSCode");
 
 UpdateCustomPropertyJs.onclick = function(){
 SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode"); 
+}
+
+Folder.onclick = function(){
+Folder.style.color = "#72a9d5";
 }
 
 function SelectedFile(ElementID,DivID){
