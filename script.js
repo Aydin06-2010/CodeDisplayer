@@ -98,7 +98,7 @@ const ScriptJsDiv = document.getElementById("ScriptJSCode");
 const UpdateCustomPropertyJsDiv = document.getElementById("UpdateCustomPropertyJSCode"); 
 
 
-//const OpenFolderImg = document.getElementById("OpenFolder");
+const OpenFolderImg = document.getElementById("OpenFolder");
 const CloseFolderImg = document.getElementById("CloseFolder");  
 const isFolderOpen = false;
 
@@ -138,7 +138,8 @@ SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode");
 
 Folder.onclick = function(){
 Folder.style.color = "#72a9d5";
-CloseFolderImg.src = "Logos/OpenFolder.png"; 
+OpenFolderImg.style.display = "block";
+CloseFolderImg.style.display = "none"; 
 }
 
 function SelectedFile(ElementID,DivID){
