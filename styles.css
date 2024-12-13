@@ -248,6 +248,16 @@ z-index: 50;
 padding-left: 25px; 
 }
 
+#OpenFolder{
+display: none;
+z-index: 100;
+}
+
+#CloseFolder{
+display: none;
+z-index: 100;
+}
+
 .folder-contents{
 background-color: blue; 
 }
