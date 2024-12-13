@@ -141,7 +141,7 @@ CloseSideBar();
 }
 
 function HideAllDiv(){
-HtmlDiv.style.display = "none";
+document.getElementById("HTMLCode").style.display = "none";
 CssDiv.style.display = "none";
 CactusJsDiv.style.display = "none";
 DinoJsDiv.style.display = "none";
