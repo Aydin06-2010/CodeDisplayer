@@ -89,12 +89,12 @@ const GroundJs = document.getElementById("GroundJs");
 const ScriptJs = document.getElementById("ScriptJs"); 
 const UpdateCustomPropertyJs = document.getElementById("UpdateCustomPropertyJs"); 
 const Folder = document.getElementById("Folder");
-const CactusFile = document.getElementById("CactusFile"); 
+/*const CactusFile = document.getElementById("CactusFile"); 
 const DinoLoseFile = document.getElementById("DinoLoseFile"); 
 const DinoRun0File = document.getElementById("DinoRun0File"); 
 const DinoRun1File = document.getElementById("DinoRun1File"); 
 const DinoStationaryFile = document.getElementById("DinoStationaryFile"); 
-const GroundFile = document.getElementById("GroundFile"); 
+const GroundFile = document.getElementById("GroundFile"); */
 
 HideAllDiv();
 ResetColors();
@@ -136,11 +136,11 @@ OpenFolderDropDown();
 
 /*CactusFile.onclick = function(){
 SelectedFile("CactusFile" , "CactusDiv"); 
-}*/
+}
 
 DinoLoseFile.onclick = function(){
 SelectedFile("DinoLoseFile" , "DinoLoseDiv"); 
-}
+}*/
 
 
 /*DinoRun0File.onclick = function(){
@@ -177,12 +177,12 @@ document.getElementById("DinoJSCode").style.display = "none";
 document.getElementById("GroundJSCode").style.display = "none";
 document.getElementById("ScriptJSCode").style.display = "none";
 document.getElementById("UpdateCustomPropertyJSCode").style.display = "none";
-document.getElementById("CactusDiv").style.display = "none";
+/*document.getElementById("CactusDiv").style.display = "none";
 document.getElementById("DinoLoseDiv").style.display = "none";
 document.getElementById("DinoRun0Div").style.display = "none";
 document.getElementById("DinoRun1Div").style.display = "none";
 document.getElementById("DinoStationaryDiv").style.display = "none";
-document.getElementById("GroundDiv").style.display = "none";
+document.getElementById("GroundDiv").style.display = "none";*/
 }
 
 function ResetColors(){
@@ -194,9 +194,9 @@ ScriptJs.style.color = "";
 GroundJs.style.color = "";
 UpdateCustomPropertyJs.style.color = "";
 Folder.style.color = ""; 
-//CactusFile.style.color = "";
+/*CactusFile.style.color = "";
 DinoLoseFile.style.color = "";
-/*DinoRun0File.style.color = "";
+DinoRun0File.style.color = "";
 DinoRun1File.style.color = "";
 DinoStationaryFile.style.color = "";
 GroundFile.style.color = "";*/
