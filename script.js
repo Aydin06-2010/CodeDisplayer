@@ -81,6 +81,17 @@ document.body.style.overflow = "auto";
 //CloseFolder();
 }
 
+const HomeBtn = document.getElementById("home");
+const HomeDiv = document.getElementById("HomeDiv"); 
+
+HomeDiv.style.display = "none"; 
+
+HomeBtn.onclick = function(){
+HomeDiv.style.display = "flex";
+CloseSideBar(); 
+} 
+
+
 const HtmlCode = document.getElementById("Html");
 const CssCode = document.getElementById("Css");
 const CactusJs = document.getElementById("CactusJs");
