@@ -137,9 +137,9 @@ flex-direction: row; */
 gap: 10px;
 }
 
-.sidebar-menu li:hover {
-color: #72d582; /* Highlight menu items on hover */
-}
+/*.sidebar-menu li:hover {
+color: #72d582;
+}*/
 
 #Html{
 margin-top: 40px;
