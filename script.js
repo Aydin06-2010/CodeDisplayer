@@ -170,7 +170,7 @@ else{
 HideAllDiv();
 ResetColors();
 CloseSideBar();
-CloseFolder();
+CloseFolderDropDown();
 }
 const Element = document.getElementById(ElementID);
 const DivElement = document.getElementById(DivID); 
