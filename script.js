@@ -161,15 +161,10 @@ SelectedFile("GroundFile" , "GroundDiv" , true);
 
 function SelectedFile(ElementID,DivID,isFolderChild){
 if(isFolderChild){
-HideAllDiv();
-ResetColors(); 
-CloseSideBar(); 
+FolderChild();
 }
 else{
-HideAllDiv();
-ResetColors();
-CloseSideBar();
-CloseFolderDropDown();
+NotFolderChild();
 }
 const Element = document.getElementById(ElementID);
 const DivElement = document.getElementById(DivID); 
@@ -208,6 +203,19 @@ DinoRun0File.style.color = "";
 DinoRun1File.style.color = "";
 DinoStationaryFile.style.color = "";
 GroundFile.style.color = "";
+}
+
+function NotFolderChild(){
+HideAllDiv();
+ResetColors();
+CloseSideBar();
+CloseFolderDropDown();
+}
+
+function FolderChild(){
+HideAllDiv();
+ResetColors();
+CloseSideBar();
 }
 
 const OpenFolderImg = document.getElementById("OpenFolder");
