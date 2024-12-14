@@ -164,6 +164,7 @@ DinoJs.style.color = "";
 ScriptJs.style.color = "";
 GroundJs.style.color = "";
 UpdateCustomPropertyJs.style.color = "";
+Folder.style.color = ""; 
 }
 
 const OpenFolderImg = document.getElementById("OpenFolder");
