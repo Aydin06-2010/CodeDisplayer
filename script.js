@@ -90,11 +90,11 @@ const ScriptJs = document.getElementById("ScriptJs");
 const UpdateCustomPropertyJs = document.getElementById("UpdateCustomPropertyJs"); 
 const Folder = document.getElementById("Folder");
 const CactusFile = document.getElementById("CactusFile"); 
-/*const DinoLoseFile = document.getElementById("DinoLoseFile"); 
+const DinoLoseFile = document.getElementById("DinoLoseFile"); 
 const DinoRun0File = document.getElementById("DinoRun0File"); 
 const DinoRun1File = document.getElementById("DinoRun1File"); 
 const DinoStationaryFile = document.getElementById("DinoStationaryFile"); 
-const GroundFile = document.getElementById("GroundFile");*/ 
+const GroundFile = document.getElementById("GroundFile"); 
 
 HideAllDiv();
 ResetColors();
@@ -138,7 +138,7 @@ CactusFile.onclick = function(){
 SelectedFile("CactusFile" , "CactusDiv"); 
 }
 
-/*DinoLoseFile.onclick = function(){
+DinoLoseFile.onclick = function(){
 SelectedFile("DinoLoseFile" , "DinoLoseDiv"); 
 }
 
@@ -157,7 +157,7 @@ SelectedFile("DinoStationaryFile" , "DinoStationaryDiv");
 
 GroundFile.onclick = function(){
 SelectedFile("GroundFile" , "GroundDiv"); 
-}*/
+}
 
 function SelectedFile(ElementID,DivID){
 HideAllDiv();
@@ -195,11 +195,11 @@ GroundJs.style.color = "";
 UpdateCustomPropertyJs.style.color = "";
 Folder.style.color = ""; 
 CactusFile.style.color = "";
-/*DinoLoseFile.style.color = "";
+DinoLoseFile.style.color = "";
 DinoRun0File.style.color = "";
 DinoRun1File.style.color = "";
 DinoStationaryFile.style.color = "";
-GroundFile.style.color = "";*/
+GroundFile.style.color = "";
 }
 
 const OpenFolderImg = document.getElementById("OpenFolder");
