@@ -176,6 +176,7 @@ const Element = document.getElementById(ElementID);
 const DivElement = document.getElementById(DivID); 
 DivElement.style.display = "flex";
 Element.style.color = "#72a9d5"; 
+console.log(isFolderChild);
 }
 
 function HideAllDiv(){
