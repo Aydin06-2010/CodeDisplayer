@@ -289,7 +289,7 @@ const baseAspectRatio = BaseScreenWidth / BaseScreenHeight;
 const scaleFactor = currentAspectRatio / baseAspectRatio;
 
 // Apply scaling to elements
-const styles = {
+/*const styles = {
 ContentCodeEditor: {
 marginTop: 85 * scaleFactor,
 marginLeft: 50 * scaleFactor,
@@ -336,7 +336,94 @@ borderRadius: 15 * scaleFactor,
 WindowOutput: {
 height: 350 * scaleFactor,
 },
+};*/
+
+
+const styles = {
+  DinoGameCode: {
+    top: 125 * scaleFactor,
+    paddingTop: 30 * scaleFactor,
+    paddingBottom: 30 * scaleFactor,
+  },
+  FileTabContainer: {
+    width: 1122 * scaleFactor,
+  },
+  PreTags: {
+    width: 1090 * scaleFactor,
+  },
+  FileTab: {
+    fontSize: 25 * scaleFactor,
+    padding: 15 * scaleFactor,
+    gap: 10 * scaleFactor,
+    borderRadius: 15 * scaleFactor,
+  },
+  TabImg: {
+    width: 25 * scaleFactor,
+  },
+  Imgs: {
+    width: 17 * scaleFactor,
+  },
+  Logos: {
+    width: 20 * scaleFactor,
+  },
+  RunImage: {
+    width: 15 * scaleFactor,
+  },
+  Run: {
+    paddingTop: 10 * scaleFactor,
+    paddingBottom: 10 * scaleFactor,
+    paddingLeft: 20 * scaleFactor,
+    paddingRight: 20 * scaleFactor,
+    fontSize: 20 * scaleFactor,
+    borderRadius: 15 * scaleFactor,
+  },
+  sidebar: {
+    width: 400 * scaleFactor,
+  },
+  sidebarMenuLi: {
+    marginTop: 15 * scaleFactor,
+    marginBottom: 15 * scaleFactor,
+    marginLeft: 25 * scaleFactor,
+    marginRight: 25 * scaleFactor,
+    gap: 10 * scaleFactor,
+  },
+  Html: {
+    marginTop: 40 * scaleFactor,
+  },
+  TopDiv: {
+    height: 70 * scaleFactor,
+    paddingLeft: 15 * scaleFactor,
+    paddingRight: 15 * scaleFactor,
+  },
+  consoleTitle: {
+    height: 70 * scaleFactor,
+    padding: 10 * scaleFactor,
+    fontSize: 25 * scaleFactor,
+  },
+  consoleButton: {
+    marginTop: 5 * scaleFactor,
+    marginBottom: 5 * scaleFactor,
+    marginLeft: 20 * scaleFactor,
+    marginRight: 20 * scaleFactor,
+    paddingTop: 10 * scaleFactor,
+    paddingBottom: 10 * scaleFactor,
+    paddingLeft: 25 * scaleFactor,
+    paddingRight: 25 * scaleFactor,
+    fontSize: 20 * scaleFactor,
+    borderRadius: 15 * scaleFactor,
+  },
+  WindowOutput: {
+    height: 350 * scaleFactor,
+  },
+  GroundImg: {
+    width: 1000 * scaleFactor,
+  },
+  folderImgs: {
+    width: 250 * scaleFactor,
+  },
 };
+
+    
     // Apply the styles dynamically
 for (let elementId in styles) {
 const element = document.getElementById(elementId);
