@@ -101,40 +101,34 @@ ResetColors();
 
 
 HtmlCode.onclick = function(){
-SelectedFile("Html" , "HTMLCode"); 
+SelectedFile("Html" , "HTMLCode" , false); 
 CloseFolder();
 } 
 
 
 CssCode.onclick = function(){
-SelectedFile("Css" , "CSSCode");
-CloseFolder();
+SelectedFile("Css" , "CSSCode" , false);
 } 
 
 
 CactusJs.onclick = function(){
-SelectedFile("CactusJs" , "CactusJSCode");
-CloseFolder();
+SelectedFile("CactusJs" , "CactusJSCode" , false);
 } 
 
 DinoJs.onclick = function(){
-SelectedFile("DinoJs" , "DinoJSCode");
-CloseFolder();
+SelectedFile("DinoJs" , "DinoJSCode" , false);
 }
 
 GroundJs.onclick = function(){
-SelectedFile("GroundJs" , "GroundJSCode"); 
-CloseFolder();
+SelectedFile("GroundJs" , "GroundJSCode" , false); 
 }
 
 ScriptJs.onclick = function(){
-SelectedFile("ScriptJs" , "ScriptJSCode"); 
-CloseFolder(); 
+SelectedFile("ScriptJs" , "ScriptJSCode" , false);
 }
 
 UpdateCustomPropertyJs.onclick = function(){
-SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode"); 
-CloseFolder(); 
+SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode" , false);
 }
 
 Folder.onclick = function(){
@@ -142,34 +136,42 @@ OpenFolderDropDown();
 }
 
 CactusFile.onclick = function(){
-SelectedFile("CactusFile" , "CactusDiv"); 
+SelectedFile("CactusFile" , "CactusDiv" , true); 
 }
 
 DinoLoseFile.onclick = function(){
-SelectedFile("DinoLoseFile" , "DinoLoseDiv"); 
+SelectedFile("DinoLoseFile" , "DinoLoseDiv" , true); 
 }
 
 
 DinoRun0File.onclick = function(){
-SelectedFile("DinoRun0File" , "DinoRun0Div"); 
+SelectedFile("DinoRun0File" , "DinoRun0Div" , true); 
 }
 
 DinoRun1File.onclick = function(){
-SelectedFile("DinoRun1File" , "DinoRun1Div"); 
+SelectedFile("DinoRun1File" , "DinoRun1Div" , true); 
 }
 
 DinoStationaryFile.onclick = function(){
-SelectedFile("DinoStationaryFile" , "DinoStationaryDiv"); 
+SelectedFile("DinoStationaryFile" , "DinoStationaryDiv" , true); 
 }
 
 GroundFile.onclick = function(){
-SelectedFile("GroundFile" , "GroundDiv"); 
+SelectedFile("GroundFile" , "GroundDiv" , true); 
 }
 
-function SelectedFile(ElementID,DivID){
+function SelectedFile(ElementID,DivID,isFolderChild){
+if(isFolderChild){
 HideAllDiv();
 ResetColors(); 
 CloseSideBar(); 
+}
+else{
+HideAllDiv();
+ResetColors();
+CloseSideBar();
+CloseFolder();
+}
 const Element = document.getElementById(ElementID);
 const DivElement = document.getElementById(DivID); 
 DivElement.style.display = "flex";
