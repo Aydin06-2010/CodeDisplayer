@@ -177,12 +177,12 @@ document.getElementById("DinoJSCode").style.display = "none";
 document.getElementById("GroundJSCode").style.display = "none";
 document.getElementById("ScriptJSCode").style.display = "none";
 document.getElementById("UpdateCustomPropertyJSCode").style.display = "none";
-/*document.getElementById("CactusDiv").style.display = "none";
+document.getElementById("CactusDiv").style.display = "none";
 document.getElementById("DinoLoseDiv").style.display = "none";
 document.getElementById("DinoRun0Div").style.display = "none";
 document.getElementById("DinoRun1Div").style.display = "none";
 document.getElementById("DinoStationaryDiv").style.display = "none";
-document.getElementById("GroundDiv").style.display = "none";*/
+document.getElementById("GroundDiv").style.display = "none";
 }
 
 function ResetColors(){
