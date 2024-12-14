@@ -78,6 +78,7 @@ sidebar.style.left = "-50%";
 isSidebarOpen = false;
 glasspane.style.display = "none";
 document.body.style.overflow = "auto"; 
+CloseFolder();
 }
 
 const HtmlCode = document.getElementById("Html");
