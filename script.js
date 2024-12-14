@@ -101,6 +101,8 @@ const HomeBtn = document.getElementById("Home");
 HideAllDiv();
 ResetColors();
 
+document.getElementById("HomeDiv").style.display = "flex";
+
 HomeBtn.onclick = function(){
 HideAllDiv();
 CloseSideBar(); 
