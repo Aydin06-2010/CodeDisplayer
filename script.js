@@ -193,7 +193,6 @@ DinoJs.style.color = "";
 ScriptJs.style.color = "";
 GroundJs.style.color = "";
 UpdateCustomPropertyJs.style.color = "";
-Folder.style.color = ""; 
 CactusFile.style.color = "";
 DinoLoseFile.style.color = "";
 DinoRun0File.style.color = "";
@@ -226,7 +225,7 @@ FolderMenu.style.display = "none";
 OpenFolderImg.style.display = "none";
 CloseFolderImg.style.display = "block";
 isFolderOpen = false;
-ResetColors(); 
+Folder.style.color = "";  
 }
     
 let CurrentScreenHeight = window.innerHeight;
