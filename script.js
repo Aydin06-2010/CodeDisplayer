@@ -193,6 +193,12 @@ ScriptJs.style.color = "";
 GroundJs.style.color = "";
 UpdateCustomPropertyJs.style.color = "";
 Folder.style.color = ""; 
+CactusFile.style.color = "";
+DinoLoseFile.style.color = "";
+DinoRun0File.style.color = "";
+DinoRun1File.style.color = "";
+DinoStationaryFile.style.color = "";
+GroundFile.style.color = "";
 }
 
 const OpenFolderImg = document.getElementById("OpenFolder");
