@@ -94,10 +94,18 @@ const DinoLoseFile = document.getElementById("DinoLoseFile");
 const DinoRun0File = document.getElementById("DinoRun0File"); 
 const DinoRun1File = document.getElementById("DinoRun1File"); 
 const DinoStationaryFile = document.getElementById("DinoStationaryFile"); 
-const GroundFile = document.getElementById("GroundFile"); 
+const GroundFile = document.getElementById("GroundFile");
+
+const HomeBtn = document.getElementById("Home"); 
 
 HideAllDiv();
 ResetColors();
+
+HomeBtn.onclick = function(){
+HideAllDiv();
+CloseSideBar(); 
+document.getElementById("HomeDiv").style.display = "flex"; 
+} 
 
 
 HtmlCode.onclick = function(){
@@ -187,6 +195,7 @@ document.getElementById("DinoRun0Div").style.display = "none";
 document.getElementById("DinoRun1Div").style.display = "none";
 document.getElementById("DinoStationaryDiv").style.display = "none";
 document.getElementById("GroundDiv").style.display = "none";
+document.getElementById("HomeDiv").style.display = "none"; 
 }
 
 function ResetColors(){
