@@ -102,7 +102,6 @@ ResetColors();
 
 HtmlCode.onclick = function(){
 SelectedFile("Html" , "HTMLCode" , false); 
-CloseFolder();
 } 
 
 
