@@ -232,6 +232,7 @@ FolderMenu.style.display = "none";
 OpenFolderImg.style.display = "none";
 CloseFolderImg.style.display = "block";
 isFolderOpen = false;
+ResetColors(); 
 Folder.style.color = "";  
 }
     
