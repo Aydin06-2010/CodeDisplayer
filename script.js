@@ -133,7 +133,8 @@ SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode");
 
 Folder.onclick = function(){
 Folder.style.color = "#72a9d5";
-OpenFolder();
+OpenFolderDropDown();
+Folder.style.color = "black"; 
 }
 
 function SelectedFile(ElementID,DivID){
@@ -171,9 +172,9 @@ const CloseFolderImg = document.getElementById("CloseFolder");
 const isFolderOpen = false;
 
 
-function OpenFolder(){
+function OpenFolderDropDown(){
 if(isFolderOpen){
-CloseFolder();
+CloseFolderDropDown();
 }
 else{
 OpenFolderImg.style.display = "block";
@@ -182,7 +183,7 @@ isFolderOpen = true;
 }
 }
 
-function CloseFolder(){
+function CloseFolderDropDown(){
 OpenFolderImg.style.display = "none";
 CloseFolderImg.style.display = "block";
 isFolderOpen = false;
