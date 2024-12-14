@@ -97,11 +97,6 @@ const GroundJsDiv = document.getElementById("GroundJSCode");
 const ScriptJsDiv = document.getElementById("ScriptJSCode"); 
 const UpdateCustomPropertyJsDiv = document.getElementById("UpdateCustomPropertyJSCode"); 
 
-
-const OpenFolderImg = document.getElementById("OpenFolder");
-const CloseFolderImg = document.getElementById("CloseFolder");  
-const isFolderOpen = false;
-
 HideAllDiv();
 ResetColors();
 
@@ -138,8 +133,7 @@ SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode");
 
 Folder.onclick = function(){
 Folder.style.color = "#72a9d5";
-OpenFolderImg.style.display = "block";
-CloseFolderImg.style.display = "none"; 
+OpenFolder();
 }
 
 function SelectedFile(ElementID,DivID){
@@ -170,6 +164,28 @@ DinoJs.style.color = "";
 ScriptJs.style.color = "";
 GroundJs.style.color = "";
 UpdateCustomPropertyJs.style.color = "";
+}
+
+const OpenFolderImg = document.getElementById("OpenFolder");
+const CloseFolderImg = document.getElementById("CloseFolder");  
+const isFolderOpen = false;
+
+
+function OpenFolder(){
+if(isFolderOpen){
+CloseFolder();
+}
+else{
+OpenFolderImg.style.display = "block";
+CloseFolderImg.style.display = "none";
+isFolderOpen = true;
+}
+}
+
+function CloseFolder(){
+OpenFolderImg.style.display = "none";
+CloseFolderImg.style.display = "block";
+isFolderOpen = false;
 }
     
 let CurrentScreenHeight = window.innerHeight;
