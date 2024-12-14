@@ -229,6 +229,7 @@ if(isFolderOpen){
 CloseFolderDropDown();
 }
 else {
+ResetColors(); 
 OpenFolderImg.style.display = "block";
 FolderMenu.style.display = "block";
 CloseFolderImg.style.display = "none";
