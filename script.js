@@ -137,6 +137,27 @@ CactusFile.onclick = function(){
 SelectedFile("CactusFile" , "CactusDiv"); 
 }
 
+DinoLoseFile.onclick = function(){
+SelectedFile("DinoLoseFile" , "DinoLoseDiv"); 
+}
+
+
+DinoRun0File.onclick = function(){
+SelectedFile("DinoRun0File" , "DinoRun0Div"); 
+}
+
+DinoRun1File.onclick = function(){
+SelectedFile("DinoRun1File" , "DinoRun1Div"); 
+}
+
+DinoStationaryFile.onclick = function(){
+SelectedFile("DinoStationaryFile" , "DinoStationaryDiv"); 
+}
+
+GroundFile.onclick = function(){
+SelectedFile("GroundFile" , "GroundDiv"); 
+}
+
 function SelectedFile(ElementID,DivID){
 HideAllDiv();
 ResetColors(); 
