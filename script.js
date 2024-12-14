@@ -133,16 +133,16 @@ Folder.onclick = function(){
 OpenFolderDropDown();
 }
 
-CactusFile.onclick = function(){
+/*CactusFile.onclick = function(){
 SelectedFile("CactusFile" , "CactusDiv"); 
-}
+}*/
 
 DinoLoseFile.onclick = function(){
 SelectedFile("DinoLoseFile" , "DinoLoseDiv"); 
 }
 
 
-DinoRun0File.onclick = function(){
+/*DinoRun0File.onclick = function(){
 SelectedFile("DinoRun0File" , "DinoRun0Div"); 
 }
 
@@ -156,7 +156,7 @@ SelectedFile("DinoStationaryFile" , "DinoStationaryDiv");
 
 GroundFile.onclick = function(){
 SelectedFile("GroundFile" , "GroundDiv"); 
-}
+}*/
 
 function SelectedFile(ElementID,DivID){
 HideAllDiv();
@@ -193,12 +193,12 @@ ScriptJs.style.color = "";
 GroundJs.style.color = "";
 UpdateCustomPropertyJs.style.color = "";
 Folder.style.color = ""; 
-CactusFile.style.color = "";
+//CactusFile.style.color = "";
 DinoLoseFile.style.color = "";
-DinoRun0File.style.color = "";
+/*DinoRun0File.style.color = "";
 DinoRun1File.style.color = "";
 DinoStationaryFile.style.color = "";
-GroundFile.style.color = "";
+GroundFile.style.color = "";*/
 }
 
 const OpenFolderImg = document.getElementById("OpenFolder");
