@@ -81,15 +81,6 @@ document.body.style.overflow = "auto";
 //CloseFolder();
 }
 
-const HomeBtn = document.getElementById("home");
-
-HomeBtn.onclick = function(){
-HideAllDiv(); 
-document.getElementById("HomeDiv").style.display = "flex";
-CloseSideBar(); 
-} 
-
-
 const HtmlCode = document.getElementById("Html");
 const CssCode = document.getElementById("Css");
 const CactusJs = document.getElementById("CactusJs");
@@ -196,7 +187,6 @@ document.getElementById("DinoRun0Div").style.display = "none";
 document.getElementById("DinoRun1Div").style.display = "none";
 document.getElementById("DinoStationaryDiv").style.display = "none";
 document.getElementById("GroundDiv").style.display = "none";
-document.getElementById("HomeDiv").style.display = "none"; 
 }
 
 function ResetColors(){
