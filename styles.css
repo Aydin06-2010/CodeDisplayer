@@ -248,20 +248,20 @@ z-index: 50;
 padding-left: 25px; 
 }
 
-/*.FolderImgs{
+#CloseFolder , OpenFolder{
 position: absolute;
 top: 0px;
 left: 0px;
-}*/
+}
 
 #OpenFolder{
 display: none;
-z-index: -1;
+z-index: 1;
 }
 
-#CloseFolder{
+/*#CloseFolder{
 z-index: 0;
-}
+}*/
 
 /*.folder-menu{
 background-color: blue; 
