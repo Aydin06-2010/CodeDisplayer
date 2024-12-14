@@ -182,7 +182,7 @@ function OpenFolderDropDown(){
 if(isFolderOpen){
 CloseFolderDropDown();
 }
-else{
+else {
 OpenFolderImg.style.display = "block";
 FolderMenu.style.display = "block";
 CloseFolderImg.style.display = "none";
