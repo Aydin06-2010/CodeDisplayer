@@ -168,7 +168,8 @@ Folder.style.color = "";
 }
 
 const OpenFolderImg = document.getElementById("OpenFolder");
-const CloseFolderImg = document.getElementById("CloseFolder");  
+const CloseFolderImg = document.getElementById("CloseFolder");
+const FolderMenu = document.querySelector(".folder-menu"); 
 let isFolderOpen = false;
 
 
@@ -178,12 +179,14 @@ CloseFolderDropDown();
 }
 else{
 OpenFolderImg.style.display = "block";
+FolderMenu.style.display = "block";
 CloseFolderImg.style.display = "none";
 isFolderOpen = true;
 }
 }
 
 function CloseFolderDropDown(){
+FolderMenu.style.display = "none";
 OpenFolderImg.style.display = "none";
 CloseFolderImg.style.display = "block";
 isFolderOpen = false;
