@@ -134,7 +134,6 @@ SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode");
 Folder.onclick = function(){
 Folder.style.color = "#72a9d5";
 OpenFolderDropDown();
-Folder.style.color = "black"; 
 }
 
 function SelectedFile(ElementID,DivID){
