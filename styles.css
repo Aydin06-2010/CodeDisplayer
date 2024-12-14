@@ -250,6 +250,7 @@ z-index: 1;
 }
 
 .folder-menu{
+display: none;
 padding: 0;
 margin-left: 30px; 
 } 
