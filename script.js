@@ -102,32 +102,39 @@ ResetColors();
 
 HtmlCode.onclick = function(){
 SelectedFile("Html" , "HTMLCode"); 
+CloseFolder();
 } 
 
 
 CssCode.onclick = function(){
-SelectedFile("Css" , "CSSCode"); 
+SelectedFile("Css" , "CSSCode");
+CloseFolder();
 } 
 
 
 CactusJs.onclick = function(){
-SelectedFile("CactusJs" , "CactusJSCode"); 
+SelectedFile("CactusJs" , "CactusJSCode");
+CloseFolder();
 } 
 
 DinoJs.onclick = function(){
-SelectedFile("DinoJs" , "DinoJSCode"); 
+SelectedFile("DinoJs" , "DinoJSCode");
+CloseFolder();
 }
 
 GroundJs.onclick = function(){
 SelectedFile("GroundJs" , "GroundJSCode"); 
+CloseFolder();
 }
 
 ScriptJs.onclick = function(){
 SelectedFile("ScriptJs" , "ScriptJSCode"); 
+CloseFolder(); 
 }
 
 UpdateCustomPropertyJs.onclick = function(){
 SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode"); 
+CloseFolder(); 
 }
 
 Folder.onclick = function(){
