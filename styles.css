@@ -244,31 +244,11 @@ display: none;
 z-index: 50; 
 }
 
-/*#Folder{
-padding-left: 25px; 
-}
-
-/*#CloseFolder , OpenFolder{
-position: absolute;
-top: 0px;
-left: 0px;
-}*/
-
 #OpenFolder{
 display: none;
 z-index: 1;
 }
 
-/*#CloseFolder{
-z-index: 0;
-}*/
-
-/*.folder-menu{
-background-color: blue; 
-}*/
-
-/*.HorizontalAlignments{
-disllay: flex;
-align-items: center;
-gap: 10px;
-}*/
+.folder-menu{
+padding-left: 30px; 
+} 
