@@ -169,7 +169,7 @@ Folder.style.color = "";
 
 const OpenFolderImg = document.getElementById("OpenFolder");
 const CloseFolderImg = document.getElementById("CloseFolder");  
-const isFolderOpen = false;
+let isFolderOpen = false;
 
 
 function OpenFolderDropDown(){
