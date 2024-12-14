@@ -132,7 +132,6 @@ SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode");
 }
 
 Folder.onclick = function(){
-Folder.style.color = "#72a9d5";
 OpenFolderDropDown();
 }
 
@@ -182,6 +181,7 @@ OpenFolderImg.style.display = "block";
 FolderMenu.style.display = "block";
 CloseFolderImg.style.display = "none";
 isFolderOpen = true;
+Folder.style.color = "#72a9d5";
 }
 }
 
@@ -190,6 +190,7 @@ FolderMenu.style.display = "none";
 OpenFolderImg.style.display = "none";
 CloseFolderImg.style.display = "block";
 isFolderOpen = false;
+ResetColors(); 
 }
     
 let CurrentScreenHeight = window.innerHeight;
