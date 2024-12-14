@@ -163,6 +163,7 @@ function SelectedFile(ElementID,DivID){
 HideAllDiv();
 ResetColors(); 
 CloseSideBar(); 
+CloseFolder();
 const Element = document.getElementById(ElementID);
 const DivElement = document.getElementById(DivID); 
 DivElement.style.display = "flex";
