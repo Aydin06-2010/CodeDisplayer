@@ -250,5 +250,6 @@ z-index: 1;
 }
 
 .folder-menu{
-padding-left: 30px; 
+padding: 0;
+margin-left: 20px; 
 } 
