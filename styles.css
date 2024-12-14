@@ -254,3 +254,18 @@ display: none;
 padding: 0;
 margin-left: 30px; 
 } 
+
+.GameImgs{
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute; 
+top: 125px;
+width: 100%;
+flex-direction: column; 
+padding: 30px 0; 
+}
+
+.folder-imgs{
+width: 500px;
+}
