@@ -82,12 +82,9 @@ document.body.style.overflow = "auto";
 }
 
 const HomeBtn = document.getElementById("home");
-const HomeDiv = document.getElementById("HomeDiv"); 
-
-HomeDiv.style.display = "none"; 
 
 HomeBtn.onclick = function(){
-HomeDiv.style.display = "flex";
+document.getElementById("HomeDiv").style.display = "flex";
 CloseSideBar(); 
 } 
 
@@ -198,6 +195,7 @@ document.getElementById("DinoRun0Div").style.display = "none";
 document.getElementById("DinoRun1Div").style.display = "none";
 document.getElementById("DinoStationaryDiv").style.display = "none";
 document.getElementById("GroundDiv").style.display = "none";
+document.getElementById("HomeDiv").style.display = "none"; 
 }
 
 function ResetColors(){
