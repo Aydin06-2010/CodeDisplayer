@@ -193,10 +193,10 @@ let CurrentScreenWidth = window.innerWidth;
     
 // Define base screen dimensions for both landscape and portrait
 const LandScapeScreenWidth = 1317;
-const LandScapeScreenHeight = 655; //568
+const LandScapeScreenHeight = 568; //568
 
 const PortraitScreenWidth = 823;
-const PortraitScreenHeight = 1149; //1062
+const PortraitScreenHeight = 1062; //1062
 
 function CalculateScaleFactors(){
 // Get current screen dimensions
