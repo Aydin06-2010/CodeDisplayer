@@ -88,14 +88,12 @@ const GroundJs = document.getElementById("GroundJs");
 const ScriptJs = document.getElementById("ScriptJs"); 
 const UpdateCustomPropertyJs = document.getElementById("UpdateCustomPropertyJs"); 
 const Folder = document.getElementById("Folder");
-
-const HtmlDiv = document.getElementById("HTMLCode");
-const CssDiv = document.getElementById("CSSCode");
-const CactusJsDiv = document.getElementById("CactusJSCode"); 
-const DinoJsDiv = document.getElementById("DinoJSCode"); 
-const GroundJsDiv = document.getElementById("GroundJSCode"); 
-const ScriptJsDiv = document.getElementById("ScriptJSCode"); 
-const UpdateCustomPropertyJsDiv = document.getElementById("UpdateCustomPropertyJSCode"); 
+const CactusFile = document.getElementById("CactusFile"); 
+const DinoLoseFile = document.getElementById("DinoLoseFile"); 
+const DinoRun0File = document.getElementById("DinoRun0File"); 
+const DinoRun1File = document.getElementById("DinoRun1File"); 
+const DinoStationaryFile = document.getElementById("DinoStationaryFile"); 
+const GroundFile = document.getElementById("GroundFile"); 
 
 HideAllDiv();
 ResetColors();
@@ -133,6 +131,10 @@ SelectedFile("UpdateCustomPropertyJs" , "UpdateCustomPropertyJSCode");
 
 Folder.onclick = function(){
 OpenFolderDropDown();
+}
+
+CactusFile.onclick = function(){
+SelectedFile("CactusFile" , "CactusDiv"); 
 }
 
 function SelectedFile(ElementID,DivID){
