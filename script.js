@@ -84,6 +84,7 @@ document.body.style.overflow = "auto";
 const HomeBtn = document.getElementById("home");
 
 HomeBtn.onclick = function(){
+HideAllDiv(); 
 document.getElementById("HomeDiv").style.display = "flex";
 CloseSideBar(); 
 } 
