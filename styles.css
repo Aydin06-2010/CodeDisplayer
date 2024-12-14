@@ -251,8 +251,12 @@ padding: 0;
 margin-left: 30px; 
 } 
 
-.GameImgs{
+/*.GameImgs{
 background-color: white; 
+}*/
+
+#GroundImg{
+width: 1000px;
 }
 
 .folder-imgs{
