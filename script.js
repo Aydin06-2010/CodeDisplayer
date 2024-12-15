@@ -435,10 +435,10 @@ const styles = {
         padding: `${30 * ScaleHeight}px 0`,
     },
     FileTabContainer: {
-        width: `${1122 * ScaleWidth}px`,
+        width: `${782 * ScaleWidth}px`,
     },
     PreTags: {
-        width: `${1090 * ScaleWidth}px`,
+        width: `${750 * ScaleWidth}px`,
     },
     UsefulBtns: {
         padding: `${10 * ScaleHeight}px ${25 * ScaleWidth}px`,
