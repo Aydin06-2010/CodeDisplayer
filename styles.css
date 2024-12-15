@@ -1,238 +1,264 @@
-* {
-    font-family: "Space Grotesk"; 
+*{
+font-family: "Space Grotesk"; 
 }
-
+    
 body {
-    margin: 0;
-    font-family: monospace;
-    background: linear-gradient(to right, #222, #444); /* Mock background content */
-    height: 100vh; /* Make the page scrollable */
-    overflow-y: scroll; 
-    color: white;
+margin: 0;
+font-family: monospace;
+background: linear-gradient(to right, #222, #444); /* Mock background content */
+height: 100vh; /* Make the page scrollable */
+overflow-y: scroll; 
+color: white;
 }
 
-.DinoGameCode {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute; 
-    top: 12.5vmin; /* Convert to vmin */
-    width: 100%;
-    flex-direction: column; 
-    padding: 3vmin 0; /* Convert to vmin */
+.DinoGameCode{
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute; 
+top: 125px;
+width: 100%;
+/*overflow-y: scroll;*/
+flex-direction: column; 
+/*margin-bottom: 16px;*/
+padding: 30px 0; 
 } 
 
-.FileTabContainer {
-    width: 60vmin; /* Adjusted */
-    display: flex;
-    align-items: left;
-    justify-content: space-between; 
+.FileTabContainer{
+width: 782px;
+display: flex;
+align-items: left;
+justify-content: space-between; 
+/*padding-left: 337px; */
+} 
+
+.PreTags{
+width: 750px;
 }
 
-.PreTags {
-    width: 58vmin; /* Adjusted */
-}
-
-.UsefulBtns {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    cursor: pointer;
+.UsefulBtns{
+display: flex;
+align-items: center;
+justify-content: center; 
+background-color: rgba(0,0,0,0);
+border: none;
+outline: none;
+cursor: pointer;
 }  
 
-.FileTab {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2d2d2d;
-    border-radius: 1.5vmin; /* Adjusted */
-    font-size: 2.5vmin; /* Adjusted */
-    padding: 3vmin; /* Adjusted */
-    gap: 1.5vmin; /* Adjusted */
+.FileTab{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #2d2d2d;
+border-radius: 15px; 
+font-size: 25px;
+padding: 15px; 
+gap: 10px;
 }
 
-.TabImg {
-    width: 2.5vmin; /* Adjusted */
+.TabImg{
+width: 25px;
 }
 
-.Imgs {
-    width: 1.7vmin; /* Adjusted */
+.Imgs{
+width: 17px;
 }
 
-.Logos {
-    width: 2vmin; /* Adjusted */
+.Logos{
+width: 20px;
 }
 
 #RunImage {
-    width: 1.5vmin; /* Adjusted */
+width: 15px; /* Adjust the size of the image */
 }
 
 #Run {
-    display: flex;
-    align-items: center;
-    gap: 1vmin; /* Adjusted */
-    justify-content: space-between; 
-    padding: 2vmin 4vmin; /* Adjusted */
-    font-size: 2vmin; /* Adjusted */
-    font-weight: bold;
-    color: #72d582;
-    background-color: #044910;
-    border: none;
-    outline: none;
-    border-radius: 1.5vmin; /* Adjusted */
-    cursor: pointer;
+display: flex; /* Align items horizontally */
+align-items: center; /* Vertically centers the button and image */
+gap: 10px; /* Adds space between the button and the image */
+justify-content: space-between; 
+padding: 10px 20px;
+font-size: 20px;
+font-weight: bold;
+color: #72d582;
+background-color: #044910;
+border: none;
+outline: none;
+border-radius: 15px;
+cursor: pointer;
 } 
 
+/* Menu Button */
 #Menu {
-    position: relative;
-    z-index: 11; /* Adjusted */
-    background: none;
-    border: none;
-    cursor: pointer;
+position: relative; /* Back to relative positioning within TopDiv */
+z-index: 1100; /* Ensures it is still above other elements */
+background: none;
+border: none;
+cursor: pointer;
 }
 
+/* Sidebar container */
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: -100%; /* Initially hidden (off-screen) */
-    width: 40vmin; /* Adjusted */
-    height: 100vh;
-    background-color: rgb(44, 52, 68);
-    color: white;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    overflow-y: auto; /* Make the sidebar scrollable if content overflows */
-    transition: left 0.3s ease-in-out;
+position: fixed;
+top: 0;
+left: -100%; /* Initially hidden (off-screen) */
+width: 400px; /* Takes up 40% of the screen width */
+height: 100vh; /* Full screen height */
+background-color: rgb(44, 52, 68);
+color: white;
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+z-index: 1000;
+overflow-y: auto; /* Make the sidebar scrollable if content overflows */
+transition: left 0.3s ease-in-out; /* Smooth slide animation */
 }
 
+/* Sidebar menu items */
 .sidebar-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 2vmin;
-    font-size: 2vmin; /* Adjusted */
-    font-weight: normal;
+list-style-type: none;
+margin: 0;
+padding: 20px;
+/*font-family: "Space Grotesk", sans-serif;*/
+font-size: 20px;
+font-weight: normal;
 }
 
-.sidebar-menu li {
-    margin: 2vmin 3vmin; /* Adjusted */
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 1vmin; /* Adjusted */
+.sidebar-menu li{
+margin: 15px 25px;
+cursor: pointer;
+display: flex;
+align-items: center;
+/*justify-items: space-between;
+flex-direction: row; */
+gap: 10px;
 }
 
-#Html {
-    margin-top: 4vmin; /* Adjusted */
+/*.sidebar-menu li:hover {
+color: #72d582;
+}*/
+
+#Html{
+margin-top: 40px;
+}
+    
+/*#Run{
+margin-top: 85px;
+margin-left: 70px; 
+}*/
+
+.CodeEditorDesigns{
+background-color: rgb(44, 52, 68);
 }
 
-.CodeEditorDesigns {
-    background-color: rgb(44, 52, 68);
-}
-
+/* TopDiv */
 .TopDiv {
-    width: 100%;
-    height: 7vmin; /* Adjusted */
-    background-color: rgb(44, 52, 68);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5vmin;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+width: 100%;
+height: 70px;
+background-color: rgb(44, 52, 68);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 15px;
+box-sizing: border-box;
+position: fixed;
+top: 0;
+z-index: 100;
 }
     
 .console-overlay {
-    position: fixed;
-    display: none; 
-    width: 100%;
-    height: 50vmin; /* Adjusted */
-    bottom: 0;
-    background-color: rgba(43, 43, 43, 0.9);
-    overflow-y: auto;
-    z-index: 1000; 
+position: fixed;
+display: none; 
+width: 100%;
+height: 50vh; /* Takes 50% of the screen height */
+bottom: 0; /* Sticks to the bottom of the viewport */
+background-color: rgba(43,43,43);
+overflow-y: auto; /* Scrollable content inside */
+overflow-x: hidden;
+z-index: 1000; 
 }
 
+/* Fixed title bar */
 .console-title {
-    position: sticky;
-    top: 0;
-    height: 7vmin; /* Adjusted */
-    background-color: rgb(44, 52, 68);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1vmin;
-    text-align: left;
-    font-weight: bold;
-    z-index: 10;
-    color: rgb(255, 255, 255);
-    font-size: 2.5vmin; /* Adjusted */
+position: sticky; /* Keeps it at the top of the console */
+top: 0;
+height: 70px;
+background-color: rgb(44, 52, 68);
+display: flex; /* Enables Flexbox */
+align-items: center; /* Vertically centers the text */
+justify-content: space-between; /* Horizontally centers the text */
+padding: 10px;
+text-align: left;
+font-weight: bold;
+z-index: 10;
+color: rgb(255, 255, 255);
+font-size: 25px; 
 }
-
-.console-button {
-    margin: 0.5vmin 2vmin; /* Adjusted */
-    padding: 1vmin 2.5vmin; /* Adjusted */
-    color: white;
-    background-color: rgb(235, 60, 60);
-    font-size: 2vmin; /* Adjusted */
-    font-weight: bold;
-    border: none;
-    border-radius: 1.5vmin; /* Adjusted */
-    outline: none;
+.console-button{
+margin: 5px 20px;
+padding:10px 25px;
+color: white;
+background-color: rgb(235,60,60);
+/*font: "Space Grotesk",sans-serif;*/
+font-size: 20px;
+font-weight: bold;
+border: none;
+border-radius: 15px;
+outline:none;
 }
-
+/* Console content area */
 .console-content {
-    color: #0f0;
+color: #0f0;
 }
 
+/* Console text lines */
 .console-line {
-    white-space: pre-wrap;
-    word-wrap: break-word;
+white-space: pre-wrap;
+word-wrap: break-word;
 }
 
-#iframeContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#iframeContainer{
+display: flex;
+align-items:center;
+justify-content: center;
+}
+    
+#WindowOutput{
+border:none;
+width:80%;
+height:350px;
+background-color: white;
 }
 
-#WindowOutput {
-    border: none;
-    width: 80vmin; /* Adjusted */
-    height: 35vmin; /* Adjusted */
-    background-color: white;
+#glasspane{
+position: fixed;
+width:  100vw;
+height: 100vh;
+top: 0;
+background-color: rgba(0,0,0,0.2);
+backdrop-filter: blur(7px);
+display: none;
+z-index: 50; 
 }
 
-#glasspane {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(7px);
-    display: none;
-    z-index: 5; /* Adjusted */
+#OpenFolder{
+display: none;
+z-index: 1;
 }
 
-#OpenFolder {
-    display: none;
-    z-index: 1;
-}
-
-.folder-menu {
-    display: none;
-    padding: 0;
-    margin-left: 3vmin; /* Adjusted */
+.folder-menu{
+display: none;
+padding: 0;
+margin-left: 30px; 
 } 
 
-#GroundImg {
-    width: 80vmin; /* Adjusted */
+/*.GameImgs{
+background-color: white; 
+}*/
+
+#GroundImg{
+width: 1000px;
 }
 
-.folder-imgs {
-    width: 25vmin; /* Adjusted */
+.folder-imgs{
+width: 250px;
 }
