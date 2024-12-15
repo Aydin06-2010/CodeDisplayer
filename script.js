@@ -256,10 +256,7 @@ isFolderOpen = false;
 ResetColors(); 
 Folder.style.color = "";  
 }
-    
-let CurrentScreenHeight = window.innerHeight;
-let CurrentScreenWidth = window.innerWidth;
-    
+
 // Define base screen dimensions for both landscape and portrait
 const LandScapeScreenWidth = 1317;
 const LandScapeScreenHeight = 568; //568
@@ -269,6 +266,8 @@ const PortraitScreenHeight = 1062; //1062
 
 function CalculateScaleFactors(){
 // Get current screen dimensions
+let CurrentScreenHeight = window.innerHeight;
+let CurrentScreenWidth = window.innerWidth;
 
 // Calculate the aspect ratio for current and base screens
 let BaseScreenWidth, BaseScreenHeight;
@@ -511,11 +510,11 @@ element.style[property] = `${style[property]}`;
 }
 }
 
-function UpdateScreenDimensions() {
+/*function UpdateScreenDimensions() {
 currentScreenWidth = window.innerWidth;
 currentScreenHeight = window.innerHeight;
 CalculateScaleFactors();
-}   
+}   */
 
 CalculateScaleFactors();
 let resizeTimeout; // Variable to track the debounce timer
@@ -524,7 +523,7 @@ let resizeTimeout; // Variable to track the debounce timer
 function handleResize() {
 clearTimeout(resizeTimeout); // Clear any previously set timeout
 resizeTimeout = setTimeout(() => {
-UpdateScreenDimensions(); // Call the function after a delay
+CalculateScaleFactors(); // Call the function after a delay
 }, 200); // Delay of 200ms
 }
 // Add event listeners
