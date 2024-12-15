@@ -372,6 +372,8 @@ document.getElementById("GroundImg").style.width = 1000 * ScaleWidth + "px";  //
 document.querySelector(".folder-imgs").style.width = 250 * ScaleWidth + "px";  // Kept as is
 }
 
+console.log(document.querySelectorAll(".sidebar-menu li").length);
+
 CalculateScaleFactors();
 let resizeTimeout; // Variable to track the debounce timer
 
