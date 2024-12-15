@@ -1,239 +1,264 @@
 *{
-    font-family: "Space Grotesk"; 
+font-family: "Space Grotesk"; 
 }
     
 body {
-    margin: 0;
-    font-family: monospace;
-    background: linear-gradient(to right, #222, #444);
-    height: 100vh;
-    overflow-y: scroll;
-    color: white;
+margin: 0;
+font-family: monospace;
+background: linear-gradient(to right, #222, #444); /* Mock background content */
+height: 100vh; /* Make the page scrollable */
+overflow-y: scroll; 
+color: white;
 }
 
 .DinoGameCode{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute; 
-    top: 15.2%;  /* 125px / 823px * 100 */
-    width: 100%;
-    flex-direction: column; 
-    padding: 3.6% 0;  /* 30px / 823px * 100 */
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute; 
+top: 125px;
+width: 100%;
+/*overflow-y: scroll;*/
+flex-direction: column; 
+/*margin-bottom: 16px;*/
+padding: 30px 0; 
 } 
 
 .FileTabContainer{
-    width: 95.1%;  /* 782px / 823px * 100 */
-    display: flex;
-    align-items: left;
-    justify-content: space-between;
+width: 782px;
+display: flex;
+align-items: left;
+justify-content: space-between; 
+/*padding-left: 337px; */
 } 
 
 .PreTags{
-    width: 91.1%;  /* 750px / 823px * 100 */
+width: 750px;
 }
 
 .UsefulBtns{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    background-color: rgba(0,0,0,0);
-    border: none;
-    outline: none;
-    cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center; 
+background-color: rgba(0,0,0,0);
+border: none;
+outline: none;
+cursor: pointer;
 }  
 
 .FileTab{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2d2d2d;
-    border-radius: 15px; 
-    font-size: 3.0vw;  /* 25px / 823px * 100 */
-    padding: 1.8% 1.2%;  /* 15px / 823px * 100 */
-    gap: 1.2%;  /* 10px / 823px * 100 */
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #2d2d2d;
+border-radius: 15px; 
+font-size: 25px;
+padding: 15px; 
+gap: 10px;
 }
 
 .TabImg{
-    width: 3.0%;  /* 25px / 823px * 100 */
+width: 25px;
 }
 
 .Imgs{
-    width: 2.1%;  /* 17px / 823px * 100 */
+width: 17px;
 }
 
 .Logos{
-    width: 2.4%;  /* 20px / 823px * 100 */
+width: 20px;
 }
 
 #RunImage {
-    width: 1.8%;  /* 15px / 823px * 100 */
+width: 15px; /* Adjust the size of the image */
 }
 
 #Run {
-    display: flex; 
-    align-items: center;
-    gap: 1.2%;  
-    justify-content: space-between;
-    padding: 1.2% 2.4%;  /* 10px / 823px * 100, 20px / 823px * 100 */
-    font-size: 2.4vw;  /* 20px / 823px * 100 */
-    font-weight: bold;
-    color: #72d582;
-    background-color: #044910;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    cursor: pointer;
+display: flex; /* Align items horizontally */
+align-items: center; /* Vertically centers the button and image */
+gap: 10px; /* Adds space between the button and the image */
+justify-content: space-between; 
+padding: 10px 20px;
+font-size: 20px;
+font-weight: bold;
+color: #72d582;
+background-color: #044910;
+border: none;
+outline: none;
+border-radius: 15px;
+cursor: pointer;
 } 
 
+/* Menu Button */
 #Menu {
-    position: relative;
-    z-index: 1100;
-    background: none;
-    border: none;
-    cursor: pointer;
+position: relative; /* Back to relative positioning within TopDiv */
+z-index: 1100; /* Ensures it is still above other elements */
+background: none;
+border: none;
+cursor: pointer;
 }
 
+/* Sidebar container */
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 48.6%;  /* 400px / 823px * 100 */
-    height: 100vh;
-    background-color: rgb(44, 52, 68);
-    color: white;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    overflow-y: auto;
-    transition: left 0.3s ease-in-out;
+position: fixed;
+top: 0;
+left: -100%; /* Initially hidden (off-screen) */
+width: 400px; /* Takes up 40% of the screen width */
+height: 100vh; /* Full screen height */
+background-color: rgb(44, 52, 68);
+color: white;
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+z-index: 1000;
+overflow-y: auto; /* Make the sidebar scrollable if content overflows */
+transition: left 0.3s ease-in-out; /* Smooth slide animation */
 }
 
+/* Sidebar menu items */
 .sidebar-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 2.4% 3.0%;  /* 20px / 823px * 100 */
-    font-size: 2.4vw;  /* 20px / 823px * 100 */
-    font-weight: normal;
+list-style-type: none;
+margin: 0;
+padding: 20px;
+/*font-family: "Space Grotesk", sans-serif;*/
+font-size: 20px;
+font-weight: normal;
 }
 
 .sidebar-menu li{
-    margin: 1.8% 3.0%;  /* 15px / 823px * 100, 25px / 823px * 100 */
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 1.2%;  /* 10px / 823px * 100 */
+margin: 15px 25px;
+cursor: pointer;
+display: flex;
+align-items: center;
+/*justify-items: space-between;
+flex-direction: row; */
+gap: 10px;
 }
+
+/*.sidebar-menu li:hover {
+color: #72d582;
+}*/
 
 #Html{
-    margin-top: 4.9%;  /* 40px / 823px * 100 */
+margin-top: 40px;
 }
+    
+/*#Run{
+margin-top: 85px;
+margin-left: 70px; 
+}*/
 
 .CodeEditorDesigns{
-    background-color: rgb(44, 52, 68);
+background-color: rgb(44, 52, 68);
 }
 
+/* TopDiv */
 .TopDiv {
-    width: 100%;
-    height: 8.5%;  /* 70px / 823px * 100 */
-    background-color: rgb(44, 52, 68);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.8% 1.8%;  /* 15px / 823px * 100 */
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    z-index: 100;
+width: 100%;
+height: 70px;
+background-color: rgb(44, 52, 68);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 15px;
+box-sizing: border-box;
+position: fixed;
+top: 0;
+z-index: 100;
 }
     
 .console-overlay {
-    position: fixed;
-    display: none; 
-    width: 100%;
-    height: 50vh;
-    bottom: 0;
-    background-color: rgba(43,43,43);
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: 1000;
+position: fixed;
+display: none; 
+width: 100%;
+height: 50vh; /* Takes 50% of the screen height */
+bottom: 0; /* Sticks to the bottom of the viewport */
+background-color: rgba(43,43,43);
+overflow-y: auto; /* Scrollable content inside */
+overflow-x: hidden;
+z-index: 1000; 
 }
 
+/* Fixed title bar */
 .console-title {
-    position: sticky;
-    top: 0;
-    height: 8.5%;  /* 70px / 823px * 100 */
-    background-color: rgb(44, 52, 68);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.2% 1.8%;  /* 10px / 823px * 100 */
-    text-align: left;
-    font-weight: bold;
-    z-index: 10;
-    color: rgb(255, 255, 255);
-    font-size: 3.0vw;  /* 25px / 823px * 100 */
+position: sticky; /* Keeps it at the top of the console */
+top: 0;
+height: 70px;
+background-color: rgb(44, 52, 68);
+display: flex; /* Enables Flexbox */
+align-items: center; /* Vertically centers the text */
+justify-content: space-between; /* Horizontally centers the text */
+padding: 10px;
+text-align: left;
+font-weight: bold;
+z-index: 10;
+color: rgb(255, 255, 255);
+font-size: 25px; 
 }
-
-.console-button {
-    margin: 0.6% 2.4%;  /* 5px / 823px * 100, 20px / 823px * 100 */
-    padding: 1.2% 3.0%;  /* 10px / 823px * 100, 25px / 823px * 100 */
-    color: white;
-    background-color: rgb(235,60,60);
-    font-size: 2.4vw;  /* 20px / 823px * 100 */
-    font-weight: bold;
-    border: none;
-    border-radius: 15px;
-    outline:none;
+.console-button{
+margin: 5px 20px;
+padding:10px 25px;
+color: white;
+background-color: rgb(235,60,60);
+/*font: "Space Grotesk",sans-serif;*/
+font-size: 20px;
+font-weight: bold;
+border: none;
+border-radius: 15px;
+outline:none;
 }
-
+/* Console content area */
 .console-content {
-    color: #0f0;
+color: #0f0;
 }
 
+/* Console text lines */
 .console-line {
-    white-space: pre-wrap;
-    word-wrap: break-word;
+white-space: pre-wrap;
+word-wrap: break-word;
 }
 
-#iframeContainer {
-    display: flex;
-    align-items:center;
-    justify-content: center;
+#iframeContainer{
+display: flex;
+align-items:center;
+justify-content: center;
 }
     
-#WindowOutput {
-    border: none;
-    width: 80%;
-    height: 42.5%;  /* 350px / 823px * 100 */
-    background-color: white;
+#WindowOutput{
+border:none;
+width:80%;
+height:350px;
+background-color: white;
 }
 
-#glasspane {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    background-color: rgba(0,0,0,0.2);
-    backdrop-filter: blur(7px);
-    display: none;
-    z-index: 50;
+#glasspane{
+position: fixed;
+width:  100vw;
+height: 100vh;
+top: 0;
+background-color: rgba(0,0,0,0.2);
+backdrop-filter: blur(7px);
+display: none;
+z-index: 50; 
 }
 
-#OpenFolder {
-    display: none;
-    z-index: 1;
+#OpenFolder{
+display: none;
+z-index: 1;
 }
 
-.folder-menu {
-    display: none;
-    padding: 0;
-    margin-left: 3.6%;  /* 30px / 823px * 100 */
+.folder-menu{
+display: none;
+padding: 0;
+margin-left: 30px; 
 } 
 
-#GroundImg {
-    width: 121.5%;  /* 1000px / 823px * 100 */
+/*.GameImgs{
+background-color: white; 
+}*/
+
+#GroundImg{
+width: 1000px;
 }
 
-.folder-imgs {
-    width: 30.4%;  /* 250px / 823px * 100 */
+.folder-imgs{
+width: 250px;
 }
