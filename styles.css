@@ -33,7 +33,10 @@ justify-content: space-between;
 } 
 
 .PreTags{
+font-size: 30px;
 width: 750px;
+white-space: pre-wrap; /* Ensures long lines break and wrap to the next line */
+word-wrap: break-word; /* Ensures that words too long to fit are broken up */
 }
 
 .UsefulBtns{
