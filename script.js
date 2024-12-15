@@ -281,7 +281,12 @@ BaseScreenWidth = PortraitScreenWidth;
 BaseScreenHeight = PortraitScreenHeight;
 }
 
-// Calculate the aspect ratios
+const ScaleWidth = CurrentScreenWidth / BaseScreenWidth;
+const ScaleHeight = CurrentScreenHeight/ BaseScreenHeight;
+
+const ScaleFont = (CurrentScreenWidth > CurrentScreenHeight) ? ScaleHeight : ScaleWidth; 
+
+/*// Calculate the aspect ratios
 const currentAspectRatio = CurrentScreenWidth / CurrentScreenHeight;
 const baseAspectRatio = BaseScreenWidth / BaseScreenHeight;
 
