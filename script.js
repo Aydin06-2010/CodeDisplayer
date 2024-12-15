@@ -74,7 +74,7 @@ CloseConsole();
 };
 
 function CloseSideBar(){
-sidebar.style.left = "-50%";
+sidebar.style.left = "-100%";
 isSidebarOpen = false;
 glasspane.style.display = "none";
 document.body.style.overflow = "auto"; 
