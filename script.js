@@ -508,13 +508,14 @@ element.style[property] = `${style[property]}`;
 }
 }
 }
+console.log(styles);
 }
 
 /*function UpdateScreenDimensions() {
 currentScreenWidth = window.innerWidth;
 currentScreenHeight = window.innerHeight;
 CalculateScaleFactors();
-}   */
+}*/
 
 //CalculateScaleFactors();
 let resizeTimeout; // Variable to track the debounce timer
@@ -527,5 +528,5 @@ CalculateScaleFactors(); // Call the function after a delay
 }, 200); // Delay of 200ms
 }
 // Add event listeners
-//window.addEventListener("resize", handleResize);
+window.addEventListener("resize", handleResize);
 //window.addEventListener("orientationchange", handleResize); 
