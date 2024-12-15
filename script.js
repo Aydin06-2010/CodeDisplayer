@@ -336,7 +336,7 @@ borderRadius: 15 * scaleFactor,
 WindowOutput: {
 height: 350 * scaleFactor,
 },
-};*/
+};
 
 
 const styles = {
@@ -421,6 +421,76 @@ const styles = {
   folderImgs: {
     width: 250 * scaleFactor,
   },
+};*/
+
+
+const styles = {
+    DinoGameCode: {
+        top: `${125 * ScaleHeight}px`,
+        padding: `${30 * ScaleHeight}px 0`,
+    },
+    FileTabContainer: {
+        width: `${1122 * ScaleWidth}px`,
+    },
+    PreTags: {
+        width: `${1090 * ScaleWidth}px`,
+    },
+    UsefulBtns: {
+        padding: `${10 * ScaleHeight}px ${25 * ScaleWidth}px`,
+    },
+    FileTab: {
+        borderRadius: `${15 * ScaleWidth}px`,
+        fontSize: `${25 * ScaleFont}px`,
+        padding: `${15 * ScaleHeight}px`,
+        gap: `${10 * ScaleWidth}px`,
+    },
+    TabImg: {
+        width: `${25 * ScaleWidth}px`,
+    },
+    Imgs: {
+        width: `${17 * ScaleWidth}px`,
+    },
+    Logos: {
+        width: `${20 * ScaleWidth}px`,
+    },
+    RunImage: {
+        width: `${15 * ScaleWidth}px`,
+    },
+    Run: {
+        padding: `${10 * ScaleHeight}px ${20 * ScaleWidth}px`,
+        fontSize: `${20 * ScaleFont}px`,
+        borderRadius: `${15 * ScaleWidth}px`,
+    },
+    sidebar: {
+        width: `${400 * ScaleWidth}px`,
+    },
+    sidebarMenu: {
+        fontSize: `${20 * ScaleFont}px`,
+    },
+    sidebarMenuItem: {
+        margin: `${15 * ScaleHeight}px ${25 * ScaleWidth}px`,
+        gap: `${10 * ScaleWidth}px`,
+    },
+    TopDiv: {
+        height: `${70 * ScaleHeight}px`,
+        padding: `0 ${15 * ScaleWidth}px`,
+    },
+    consoleTitle: {
+        height: `${70 * ScaleHeight}px`,
+        fontSize: `${25 * ScaleFont}px`,
+    },
+    consoleButton: {
+        margin: `${5 * ScaleHeight}px ${20 * ScaleWidth}px`,
+        padding: `${10 * ScaleHeight}px ${25 * ScaleWidth}px`,
+        fontSize: `${20 * ScaleFont}px`,
+        borderRadius: `${15 * ScaleWidth}px`,
+    },
+    GroundImg: {
+        width: `${1000 * ScaleWidth}px`,
+    },
+    folderImgs: {
+        width: `${250 * ScaleWidth}px`,
+    },
 };
 
     
@@ -430,7 +500,7 @@ const element = document.getElementById(elementId);
 if (element) {
 const style = styles[elementId];
 for (let property in style) {
-element.style[property] = `${style[property]}px`;
+element.style[property] = `${style[property]}`;
 }
 }
 }
