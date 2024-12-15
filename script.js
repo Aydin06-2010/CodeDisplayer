@@ -402,7 +402,7 @@ window.addEventListener("resize", handleResize);
 
 
 // Set the event date in UTC format
-const eventDateUTC = new Date(Date.UTC(2024, 11, 15, 6, 5, 0)).getTime(); 
+const eventDateUTC = new Date(Date.UTC(2024, 11, 15, 18, 15, 0)).getTime(); 
 // Note: Month is 0-indexed, so 11 = December
 
 function updateCountdown() {
@@ -412,6 +412,7 @@ const distance = eventDateUTC - nowUTC;
 
 if (distance < 0) {
 document.getElementById("countdown").textContent = "The event has started!";
+document.getElementById("countdown").style.display = "none"; 
 clearInterval(interval);
 return;
 }
