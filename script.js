@@ -360,7 +360,7 @@ document.querySelectorAll(".sidebar-menu li").forEach(function(item) {
     item.style.marginLeft = 25 * ScaleWidth + "px";
     item.style.marginRight = 25 * ScaleWidth + "px";
     item.style.gap = 10 * ScaleHeight + "px";
-    console.log(item);
+    item.style.fontSize = 25 * ScaleWidth + "px";
 });
 
 // Apply styles to Html
