@@ -399,3 +399,28 @@ CalculateScaleFactors(); // Call the function after a delay
 // Add event listeners
 window.addEventListener("resize", handleResize);
 //window.addEventListener("orientationchange", handleResize); 
+
+
+const eventDate = new Date("2024-11-15T21:20:00+06:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            if (distance < 0) {
+                document.getElementById("countdown").innerHTML = "The event has started!";
+                clearInterval(interval);
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = 
+                `Time Left Till Event: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        // Update the countdown every second
+        const interval = setInterval(updateCountdown, 10);
