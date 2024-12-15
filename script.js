@@ -332,7 +332,7 @@ item.style.fontSize = 25 * ScaleWidth + "px";
 item.style.padding = 15 * ScaleHeight + "px";
 item.style.gap = 10 * ScaleHeight + "px";
 item.style.borderRadius = 15 * ScaleHeight + "px";
-}):
+});
 
 
 // Apply styles to Tab Image
