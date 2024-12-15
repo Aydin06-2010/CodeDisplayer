@@ -428,6 +428,16 @@ document.getElementById("countdown").textContent = `Time Left Till Event: ${days
 // Update the countdown every second
 const interval = setInterval(updateCountdown, 10);
 
+function HideTimerDiv(){
+document.getElementById("TimerDiv").style.display = "none";
+document.body.pointerEvents = "auto";
+}
+
+function ShowTimerDiv(){
+document.getElementById("TimerDiv").style.display = "flex";
+document.body.pointerEvents = "none";
+}
+
 
 function getLocalTime() {
 const now = new Date();
