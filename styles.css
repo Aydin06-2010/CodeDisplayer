@@ -102,7 +102,7 @@ cursor: pointer;
 .sidebar {
 position: fixed;
 top: 0;
-left: -50%; /* Initially hidden (off-screen) */
+left: -100%; /* Initially hidden (off-screen) */
 width: 400px; /* Takes up 40% of the screen width */
 height: 100vh; /* Full screen height */
 background-color: rgb(44, 52, 68);
