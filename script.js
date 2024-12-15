@@ -517,7 +517,7 @@ currentScreenHeight = window.innerHeight;
 CalculateScaleFactors();
 }*/
 
-//CalculateScaleFactors();
+CalculateScaleFactors();
 let resizeTimeout; // Variable to track the debounce timer
 
 // Debounced resize/orientationchange handler
