@@ -272,6 +272,8 @@ background-color: white;
 z-index: 10000; 
 width: 100vw;
 height: 100vh;
-text-align: center;
 font-size: 25px; 
+display: flex;
+align-items: center;
+justify-content: center;
 }
