@@ -401,7 +401,7 @@ window.addEventListener("resize", handleResize);
 //window.addEventListener("orientationchange", handleResize); 
 
 
-const eventDate = new Date("2024-15-12T17:47:00+06:00").getTime();
+const eventDate = new Date("2024-15-12T17:50:00+06:00").getTime();
 
         function updateCountdown() {
             const now = new Date().getTime();
