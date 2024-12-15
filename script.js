@@ -285,237 +285,92 @@ const ScaleHeight = CurrentScreenHeight/ BaseScreenHeight;
 
 const ScaleFont = (CurrentScreenWidth > CurrentScreenHeight) ? ScaleWidth : ScaleHeight; 
 
-/*// Calculate the aspect ratios
-const currentAspectRatio = CurrentScreenWidth / CurrentScreenHeight;
-const baseAspectRatio = BaseScreenWidth / BaseScreenHeight;
+// Apply styles to Window Output iframe
+document.getElementById("WindowOutput").style.height = 350 * ScaleHeight + "px";
 
-// Calculate scale factor based on the aspect ratio
-const scaleFactor = currentAspectRatio / baseAspectRatio;
+// Apply styles to Console Title
+document.querySelector(".console-title").style.height = 70 * ScaleHeight + "px";
+document.querySelector(".console-title").style.padding = 10 * ScaleHeight + "px";
+document.querySelector(".console-title").style.fontSize = 25 * ScaleWidth + "px";
 
-// Apply scaling to elements
-/*const styles = {
-ContentCodeEditor: {
-marginTop: 85 * scaleFactor,
-marginLeft: 50 * scaleFactor,
-},
-firstCode: {
-maxHeight: 500 * scaleFactor,
-},
-RunImage: {
-width: 15 * scaleFactor,
-},
-Run: {
-paddingTop: 10 * scaleFactor,
-paddingBottom: 10 * scaleFactor,
-paddingLeft: 20 * scaleFactor,
-paddingRight: 20 * scaleFactor,
-fontSize: 20 * scaleFactor,
-borderRadius: 15 * scaleFactor,
-},
-TopDiv: {
-height: 70 * scaleFactor,
-paddingLeft: 15 * scaleFactor,
-paddingRight: 15 * scaleFactor,
-},
-pre: {
-minWidth: 1000 * scaleFactor,
-},
-consoleTitle: {
-height: 70 * scaleFactor,
-padding: 10 * scaleFactor,
-fontSize: 25 * scaleFactor,
-},
-consoleButton: {
-marginTop: 5 * scaleFactor,
-marginBottom: 5 * scaleFactor,
-marginLeft: 20 * scaleFactor,
-marginRight: 20 * scaleFactor,
-paddingTop: 10 * scaleFactor,
-paddingBottom: 10 * scaleFactor,
-paddingLeft: 25 * scaleFactor,
-paddingRight: 25 * scaleFactor,
-fontSize: 20 * scaleFactor,
-borderRadius: 15 * scaleFactor,
-},
-WindowOutput: {
-height: 350 * scaleFactor,
-},
-};
+// Apply styles to Console Button
+document.querySelector(".console-button").style.marginTop = 5 * ScaleHeight + "px";
+document.querySelector(".console-button").style.marginBottom = 5 * ScaleHeight + "px";
+document.querySelector(".console-button").style.marginLeft = 20 * ScaleWidth + "px";
+document.querySelector(".console-button").style.marginRight = 20 * ScaleWidth + "px";
+document.querySelector(".console-button").style.paddingTop = 10 * ScaleHeight + "px";
+document.querySelector(".console-button").style.paddingBottom = 10 * ScaleHeight + "px";
+document.querySelector(".console-button").style.paddingLeft = 25 * ScaleWidth + "px";
+document.querySelector(".console-button").style.paddingRight = 25 * ScaleWidth + "px";
+document.querySelector(".console-button").style.fontSize = 20 * ScaleWidth + "px";
+document.querySelector(".console-button").style.borderRadius = 15 * ScaleHeight + "px";
 
+// Apply styles to Run Button
+document.getElementById("Run").style.paddingTop = 10 * ScaleHeight + "px";
+document.getElementById("Run").style.paddingBottom = 10 * ScaleHeight + "px";
+document.getElementById("Run").style.paddingLeft = 20 * ScaleWidth + "px";
+document.getElementById("Run").style.paddingRight = 20 * ScaleWidth + "px";
+document.getElementById("Run").style.fontSize = 20 * ScaleWidth + "px";
+document.getElementById("Run").style.borderRadius = 15 * ScaleHeight + "px";
 
-const styles = {
-  DinoGameCode: {
-    top: 125 * scaleFactor,
-    paddingTop: 30 * scaleFactor,
-    paddingBottom: 30 * scaleFactor,
-  },
-  FileTabContainer: {
-    width: 1122 * scaleFactor,
-  },
-  PreTags: {
-    width: 1090 * scaleFactor,
-  },
-  FileTab: {
-    fontSize: 25 * scaleFactor,
-    padding: 15 * scaleFactor,
-    gap: 10 * scaleFactor,
-    borderRadius: 15 * scaleFactor,
-  },
-  TabImg: {
-    width: 25 * scaleFactor,
-  },
-  Imgs: {
-    width: 17 * scaleFactor,
-  },
-  Logos: {
-    width: 20 * scaleFactor,
-  },
-  RunImage: {
-    width: 15 * scaleFactor,
-  },
-  Run: {
-    paddingTop: 10 * scaleFactor,
-    paddingBottom: 10 * scaleFactor,
-    paddingLeft: 20 * scaleFactor,
-    paddingRight: 20 * scaleFactor,
-    fontSize: 20 * scaleFactor,
-    borderRadius: 15 * scaleFactor,
-  },
-  sidebar: {
-    width: 400 * scaleFactor,
-  },
-  sidebarMenuLi: {
-    marginTop: 15 * scaleFactor,
-    marginBottom: 15 * scaleFactor,
-    marginLeft: 25 * scaleFactor,
-    marginRight: 25 * scaleFactor,
-    gap: 10 * scaleFactor,
-  },
-  Html: {
-    marginTop: 40 * scaleFactor,
-  },
-  TopDiv: {
-    height: 70 * scaleFactor,
-    paddingLeft: 15 * scaleFactor,
-    paddingRight: 15 * scaleFactor,
-  },
-  consoleTitle: {
-    height: 70 * scaleFactor,
-    padding: 10 * scaleFactor,
-    fontSize: 25 * scaleFactor,
-  },
-  consoleButton: {
-    marginTop: 5 * scaleFactor,
-    marginBottom: 5 * scaleFactor,
-    marginLeft: 20 * scaleFactor,
-    marginRight: 20 * scaleFactor,
-    paddingTop: 10 * scaleFactor,
-    paddingBottom: 10 * scaleFactor,
-    paddingLeft: 25 * scaleFactor,
-    paddingRight: 25 * scaleFactor,
-    fontSize: 20 * scaleFactor,
-    borderRadius: 15 * scaleFactor,
-  },
-  WindowOutput: {
-    height: 350 * scaleFactor,
-  },
-  GroundImg: {
-    width: 1000 * scaleFactor,
-  },
-  folderImgs: {
-    width: 250 * scaleFactor,
-  },
-};*/
+// Apply styles to File Tab Container
+document.querySelector(".FileTabContainer").style.width = 782 * ScaleWidth + "px";
 
+// Apply styles to PreTags
+document.querySelector(".PreTags").style.width = 750 * ScaleWidth + "px";
 
-const styles = {
-    DinoGameCode: {
-        top: `${125 * ScaleHeight}px`,
-        padding: `${30 * ScaleHeight}px 0`,
-    },
-    FileTabContainer: {
-        width: `${782 * ScaleWidth}px`,
-    },
-    PreTags: {
-        width: `${750 * ScaleWidth}px`,
-    },
-    UsefulBtns: {
-        padding: `${10 * ScaleHeight}px ${25 * ScaleWidth}px`,
-    },
-    FileTab: {
-        borderRadius: `${15 * ScaleWidth}px`,
-        fontSize: `${25 * ScaleFont}px`,
-        padding: `${15 * ScaleHeight}px`,
-        gap: `${10 * ScaleWidth}px`,
-    },
-    TabImg: {
-        width: `${25 * ScaleWidth}px`,
-    },
-    Imgs: {
-        width: `${17 * ScaleWidth}px`,
-    },
-    Logos: {
-        width: `${20 * ScaleWidth}px`,
-    },
-    RunImage: {
-        width: `${15 * ScaleWidth}px`,
-    },
-    Run: {
-        padding: `${10 * ScaleHeight}px ${20 * ScaleWidth}px`,
-        fontSize: `${20 * ScaleFont}px`,
-        borderRadius: `${15 * ScaleWidth}px`,
-    },
-    sidebar: {
-        width: `${400 * ScaleWidth}px`,
-    },
-    sidebarMenu: {
-        fontSize: `${20 * ScaleFont}px`,
-    },
-    sidebarMenuItem: {
-        margin: `${15 * ScaleHeight}px ${25 * ScaleWidth}px`,
-        gap: `${10 * ScaleWidth}px`,
-    },
-    TopDiv: {
-        height: `${70 * ScaleHeight}px`,
-        padding: `0 ${15 * ScaleWidth}px`,
-    },
-    consoleTitle: {
-        height: `${70 * ScaleHeight}px`,
-        fontSize: `${25 * ScaleFont}px`,
-    },
-    consoleButton: {
-        margin: `${5 * ScaleHeight}px ${20 * ScaleWidth}px`,
-        padding: `${10 * ScaleHeight}px ${25 * ScaleWidth}px`,
-        fontSize: `${20 * ScaleFont}px`,
-        borderRadius: `${15 * ScaleWidth}px`,
-    },
-    GroundImg: {
-        width: `${1000 * ScaleWidth}px`,
-    },
-    folderImgs: {
-        width: `${250 * ScaleWidth}px`,
-    },
-};
+// Apply styles to Useful Buttons
+document.querySelectorAll(".UsefulBtns").forEach(function(button) {
+    button.style.padding = 10 * ScaleHeight + "px";
+});
 
-    
-    // Apply the styles dynamically
-for (let elementId in styles) {
-const element = document.getElementById(elementId);
-if (element) {
-const style = styles[elementId];
-for (let property in style) {
-element.style[property] = `${style[property]}`;
+// Apply styles to File Tab
+document.querySelector(".FileTab").style.fontSize = 25 * ScaleWidth + "px";
+document.querySelector(".FileTab").style.padding = 15 * ScaleHeight + "px";
+document.querySelector(".FileTab").style.gap = 10 * ScaleHeight + "px";
+document.querySelector(".FileTab").style.borderRadius = 15 * ScaleHeight + "px";
+
+// Apply styles to Tab Image
+document.querySelector(".TabImg").style.width = 25 * ScaleWidth + "px";
+
+// Apply styles to Imgs
+document.querySelector(".Imgs").style.width = 17 * ScaleWidth + "px";
+
+// Apply styles to Logos
+document.querySelector(".Logos").style.width = 20 * ScaleWidth + "px";
+
+// Apply styles to Run Image
+document.getElementById("RunImage").style.width = 15 * ScaleWidth + "px";
+
+// Apply styles to Sidebar
+document.querySelector(".sidebar").style.width = 400 * ScaleWidth + "px";
+
+// Apply styles to Sidebar Menu List Item
+document.querySelectorAll(".sidebar-menu li").forEach(function(item) {
+    item.style.marginTop = 15 * ScaleHeight + "px";
+    item.style.marginBottom = 15 * ScaleHeight + "px";
+    item.style.marginLeft = 25 * ScaleWidth + "px";
+    item.style.marginRight = 25 * ScaleWidth + "px";
+    item.style.gap = 10 * ScaleHeight + "px";
+});
+
+// Apply styles to Html
+document.getElementById("Html").style.marginTop = 40 * ScaleHeight + "px";
+
+// Apply styles to Top Div
+document.querySelector(".TopDiv").style.height = 70 * ScaleHeight + "px";
+document.querySelector(".TopDiv").style.paddingLeft = 15 * ScaleWidth + "px";
+document.querySelector(".TopDiv").style.paddingRight = 15 * ScaleWidth + "px";
+
+// Apply styles to Folder Menu
+document.querySelector(".folder-menu").style.marginLeft = 30 * ScaleWidth + "px";  // Kept as is
+
+// Apply styles to Ground Image
+document.getElementById("GroundImg").style.width = 1000 * ScaleWidth + "px";  // Kept as is
+
+// Apply styles to Folder Images
+document.querySelector(".folder-imgs").style.width = 250 * ScaleWidth + "px";  // Kept as is
 }
-}
-}
-console.log(styles);
-}
-
-/*function UpdateScreenDimensions() {
-currentScreenWidth = window.innerWidth;
-currentScreenHeight = window.innerHeight;
-CalculateScaleFactors();
-}*/
 
 CalculateScaleFactors();
 let resizeTimeout; // Variable to track the debounce timer
