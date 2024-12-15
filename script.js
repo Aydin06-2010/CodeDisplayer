@@ -337,7 +337,9 @@ item.style.borderRadius = 15 * ScaleHeight + "px";
 
 
 // Apply styles to Tab Image
-document.querySelector(".TabImg").style.width = 25 * ScaleWidth + "px";
+document.querySelectorAll(".TabImg").forEach(function(item){ 
+item.style.width = 25 * ScaleWidth + "px";
+});
 
 // Apply styles to Imgs
 document.querySelectorAll(".Imgs").forEach(function(item){ 
