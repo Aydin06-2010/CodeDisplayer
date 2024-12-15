@@ -367,6 +367,7 @@ document.querySelector(".folder-menu").style.marginLeft = 30 * ScaleWidth + "px"
 
 // Apply styles to Ground Image
 document.getElementById("GroundImg").style.width = 1000 * ScaleWidth + "px";  // Kept as is
+console.log(document.querySelectorAll(".sidebar-menu li").length);
 
 // Apply styles to Folder Images
 document.querySelector(".folder-imgs").style.width = 250 * ScaleWidth + "px";  // Kept as is
