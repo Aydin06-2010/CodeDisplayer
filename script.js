@@ -516,7 +516,7 @@ currentScreenHeight = window.innerHeight;
 CalculateScaleFactors();
 }   */
 
-CalculateScaleFactors();
+//CalculateScaleFactors();
 let resizeTimeout; // Variable to track the debounce timer
 
 // Debounced resize/orientationchange handler
@@ -527,5 +527,5 @@ CalculateScaleFactors(); // Call the function after a delay
 }, 200); // Delay of 200ms
 }
 // Add event listeners
-window.addEventListener("resize", handleResize);
-window.addEventListener("orientationchange", handleResize); 
+//window.addEventListener("resize", handleResize);
+//window.addEventListener("orientationchange", handleResize); 
