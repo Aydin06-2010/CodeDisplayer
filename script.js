@@ -315,7 +315,7 @@ document.getElementById("Run").style.borderRadius = 15 * ScaleHeight + "px";
 
 // Apply styles to File Tab Container
 document.querySelectorAll(".FileTabContainer").forEach(function(item){ 
-item.style.width = 732 * ScaleWidth + "px";
+item.style.width = 776 * ScaleWidth + "px";
 });
 // Apply styles to PreTags
 document.querySelectorAll(".PreTags").forEach(function(item){ 
