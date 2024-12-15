@@ -447,7 +447,7 @@ return `${hours}:${minutes}:${seconds}`;
 
 // Function to update the Time element
 function updateTime() {
-document.getElementById("Time").textContent = getLocalTime();
+document.getElementById("Time").textContent = ` Local Time: ${getLocalTime()}`;
 }
 
 // Update the time every second
