@@ -320,6 +320,7 @@ item.style.width = 776 * ScaleWidth + "px";
 // Apply styles to PreTags
 document.querySelectorAll(".PreTags").forEach(function(item){ 
 item.style.width = 700 * ScaleWidth + "px";
+item.style.fontSize = 20 * ScaleWidth + "px";
 });
 // Apply styles to Useful Buttons
 document.querySelectorAll(".UsefulBtns").forEach(function(button) {
