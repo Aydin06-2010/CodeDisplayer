@@ -360,7 +360,7 @@ document.querySelectorAll(".sidebar-menu li").forEach(function(item) {
     item.style.marginLeft = 25 * ScaleWidth + "px";
     item.style.marginRight = 25 * ScaleWidth + "px";
     item.style.gap = 10 * ScaleHeight + "px";
-    item.style.fontSize = 25 * ScaleWidth + "px";
+    item.style.fontSize = 23 * ScaleWidth + "px";
 });
 
 // Apply styles to Html
@@ -382,8 +382,6 @@ document.querySelectorAll(".folder-imgs").forEach(function(item){
 item.style.width = 250 * ScaleWidth + "px"; 
 }); // Kept as is
 }
-
-console.log(document.querySelectorAll(".sidebar-menu li").length);
 
 CalculateScaleFactors();
 let resizeTimeout; // Variable to track the debounce timer
