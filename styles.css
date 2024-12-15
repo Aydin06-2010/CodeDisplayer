@@ -25,7 +25,7 @@ padding: 30px 0;
 } 
 
 .FileTabContainer{
-width: 750px;
+width: 732px;
 display: flex;
 align-items: left;
 justify-content: space-between; 
@@ -34,7 +34,7 @@ justify-content: space-between;
 
 .PreTags{
 font-size: 20px;
-width: 718px;
+width: 700px;
 white-space: pre-wrap; /* Ensures long lines break and wrap to the next line */
 word-wrap: break-word; /* Ensures that words too long to fit are broken up */
 }
