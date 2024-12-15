@@ -266,3 +266,11 @@ width: 1000px;
 .folder-imgs{
 width: 250px;
 }
+
+#TimerDiv{
+background-color: white; 
+width: 100vw;
+height: 100vh;
+text-align: center;
+font-size: 25px; 
+}
