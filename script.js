@@ -412,7 +412,7 @@ const distance = eventDateUTC - nowUTC;
 
 if (distance < 0) {
 document.getElementById("countdown").textContent = "The event has started!";
-document.getElementById("countdown").style.display = "none"; 
+document.getElementById("TimerDiv").style.display = "none"; 
 clearInterval(interval);
 return;
 }
