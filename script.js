@@ -401,26 +401,28 @@ window.addEventListener("resize", handleResize);
 //window.addEventListener("orientationchange", handleResize); 
 
 
-const eventDate = new Date("2024-12-15T17:55:00+06:00").getTime();
+// Set the event date in UTC format
+const eventDateUTC = new Date(Date.UTC(2024, 11, 15, 6, 5, 0)).getTime(); 
+// Note: Month is 0-indexed, so 11 = December
 
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = eventDate - now;
+function updateCountdown() {
+// Get the current UTC time
+const nowUTC = new Date().getTime();
+const distance = eventDateUTC - nowUTC;
 
-            if (distance < 0) {
-                document.getElementById("countdown").innerHTML = "The event has started!";
-                clearInterval(interval);
-                return;
-            }
+if (distance < 0) {
+document.getElementById("countdown").textContent = "The event has started!";
+clearInterval(interval);
+return;
+}
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById("countdown").innerHTML = 
-                `Time Left Till Event: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }
+document.getElementById("countdown").textContent = `Time Left Till Event: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
 
-        // Update the countdown every second
-        const interval = setInterval(updateCountdown, 10);
+// Update the countdown every second
+const interval = setInterval(updateCountdown, 10);
