@@ -426,3 +426,29 @@ document.getElementById("countdown").textContent = `Time Left Till Event: ${days
 
 // Update the countdown every second
 const interval = setInterval(updateCountdown, 10);
+
+
+function getLocalTime() {
+const now = new Date();
+
+// Get hours, minutes, and seconds
+let hours = now.getHours();
+let minutes = now.getMinutes();
+let seconds = now.getSeconds();
+
+// Add leading zeros to single-digit numbers (e.g., 08 instead of 8)
+hours = hours < 10 ? '0' + hours : hours;
+minutes = minutes < 10 ? '0' + minutes : minutes;
+seconds = seconds < 10 ? '0' + seconds : seconds;
+
+// Return the time in hh:mm:ss format
+return `${hours}:${minutes}:${seconds}`;
+}
+
+// Function to update the Time element
+function updateTime() {
+document.getElementById("Time").textContent = getLocalTime();
+}
+
+// Update the time every second
+setInterval(updateTime, 10);
