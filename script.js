@@ -315,11 +315,11 @@ document.getElementById("Run").style.borderRadius = 15 * ScaleHeight + "px";
 
 // Apply styles to File Tab Container
 document.querySelectorAll(".FileTabContainer").forEach(function(item){ 
-item.style.width = 750 * ScaleWidth + "px";
+item.style.width = 732 * ScaleWidth + "px";
 });
 // Apply styles to PreTags
 document.querySelectorAll(".PreTags").forEach(function(item){ 
-item.style.width = 718 * ScaleWidth + "px";
+item.style.width = 700 * ScaleWidth + "px";
 });
 // Apply styles to Useful Buttons
 document.querySelectorAll(".UsefulBtns").forEach(function(button) {
