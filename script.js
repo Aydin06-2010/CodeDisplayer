@@ -402,7 +402,7 @@ window.addEventListener("resize", handleResize);
 
 
 // Set the event date in UTC format
-const eventDateUTC = new Date("2024-12-15T18:40:00+06:00").getTime();
+const eventDateUTC = new Date("2024-12-16T07:00:00+06:00").getTime();
 // Note: Month is 0-indexed, so 11 = December
 
 function updateCountdown() {
