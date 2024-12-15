@@ -314,30 +314,36 @@ document.getElementById("Run").style.fontSize = 20 * ScaleWidth + "px";
 document.getElementById("Run").style.borderRadius = 15 * ScaleHeight + "px";
 
 // Apply styles to File Tab Container
-document.querySelector(".FileTabContainer").style.width = 782 * ScaleWidth + "px";
-
+document.querySelectorAll(".FileTabContainer").forEach(function(item){ 
+item.style.width = 782 * ScaleWidth + "px";
+});
 // Apply styles to PreTags
-document.querySelector(".PreTags").style.width = 750 * ScaleWidth + "px";
-
+document.querySelectorAll(".PreTags").forEach(function(item){ 
+item.style.width = 750 * ScaleWidth + "px";
+});
 // Apply styles to Useful Buttons
 document.querySelectorAll(".UsefulBtns").forEach(function(button) {
     button.style.padding = 10 * ScaleHeight + "px";
 });
 
 // Apply styles to File Tab
-document.querySelector(".FileTab").style.fontSize = 25 * ScaleWidth + "px";
-document.querySelector(".FileTab").style.padding = 15 * ScaleHeight + "px";
-document.querySelector(".FileTab").style.gap = 10 * ScaleHeight + "px";
-document.querySelector(".FileTab").style.borderRadius = 15 * ScaleHeight + "px";
+document.querySelectorAll(".FileTab").forEach(function(item){ 
+item.style.fontSize = 25 * ScaleWidth + "px";
+item.style.padding = 15 * ScaleHeight + "px";
+item.style.gap = 10 * ScaleHeight + "px";
+item.style.borderRadius = 15 * ScaleHeight + "px";
+}):
+
 
 // Apply styles to Tab Image
 document.querySelector(".TabImg").style.width = 25 * ScaleWidth + "px";
 
 // Apply styles to Imgs
-document.querySelector(".Imgs").style.width = 17 * ScaleWidth + "px";
-
+document.querySelectorAll(".Imgs").forEach(function(item){ 
+item.style.width = 17 * ScaleWidth + "px";
+});
 // Apply styles to Logos
-document.querySelector(".Logos").forEach(function(item){ 
+document.querySelectorAll(".Logos").forEach(function(item){ 
 item.style.width = 20 * ScaleWidth + "px"; 
 });
 
@@ -372,7 +378,7 @@ document.querySelector(".folder-menu").style.marginLeft = 30 * ScaleWidth + "px"
 document.getElementById("GroundImg").style.width = 1000 * ScaleWidth + "px";  // Kept as is
 
 // Apply styles to Folder Images
-document.querySelector(".folder-imgs").forEach(function(item){
+document.querySelectorAll(".folder-imgs").forEach(function(item){
 item.style.width = 250 * ScaleWidth + "px"; 
 }); // Kept as is
 }
