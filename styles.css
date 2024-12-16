@@ -120,11 +120,12 @@ transition: left 0.3s ease-in-out; /* Smooth slide animation */
 .sidebar-menu {
 list-style-type: none;
 margin: 0;
+max-width: 720px;
 padding: 20px;
 /*font-family: "Space Grotesk", sans-serif;*/
 font-size: 20px;
 font-weight: normal;
-overflow-y: scroll; 
+overflow-y: scroll;
 }
 
 .sidebar-menu li{
