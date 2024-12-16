@@ -356,6 +356,8 @@ document.getElementById("RunImage").style.width = 15 * ScaleWidth + "px";
 // Apply styles to Sidebar
 document.querySelector(".sidebar").style.width = 400 * ScaleWidth + "px";
 
+document.querySelector(".sidebar-menu").style.maxHeight = 720 * ScaleHeight + "px";
+
 // Apply styles to Sidebar Menu List Item
 document.querySelectorAll(".sidebar-menu li").forEach(function(item) {
     item.style.marginTop = 15 * ScaleHeight + "px";
