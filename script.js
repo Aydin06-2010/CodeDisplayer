@@ -361,12 +361,15 @@ document.querySelector(".sidebar-menu").style.maxHeight = 720 * ScaleHeight + "p
 // Apply styles to Sidebar Menu List Item
 document.querySelectorAll(".sidebar-menu li").forEach(function(item) {
     item.style.marginTop = 15 * ScaleHeight + "px";
-    item.style.marginBottom = 15 * ScaleHeight + "px";
     item.style.marginLeft = 25 * ScaleWidth + "px";
     item.style.marginRight = 25 * ScaleWidth + "px";
     item.style.gap = 10 * ScaleHeight + "px";
     item.style.fontSize = 23 * ScaleWidth + "px";
 });
+
+document.querySelectorAll(".sidebar-menu li:not(:nth-child(8))").forEach(function(item){
+    item.style.marginBottom = 15 * ScaleHeight + "px";
+}); 
 
 // Apply styles to Html
 document.getElementById("Html").style.marginTop = 40 * ScaleHeight + "px";
