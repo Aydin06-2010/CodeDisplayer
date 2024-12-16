@@ -247,6 +247,10 @@ display: none;
 z-index: 50; 
 }
 
+#Folder{
+margin-bottom: 0;
+}
+
 #OpenFolder{
 display: none;
 z-index: 1;
