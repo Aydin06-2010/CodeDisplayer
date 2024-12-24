@@ -1,13 +1,20 @@
 *{
 font-family: "Space Grotesk"; 
 }
+
+html , body{
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+}
     
 body {
 margin: 0;
 font-family: monospace;
 background: linear-gradient(to right, #222, #444); /* Mock background content */
-height: 100vh; /* Make the page scrollable */
-overflow-y: scroll; 
+/*height: 100vh; /* Make the page scrollable 
+overflow-y: scroll; */
 color: white;
 }
 
