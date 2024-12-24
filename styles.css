@@ -113,7 +113,7 @@ color: white;
 box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 z-index: 1000;
 overflow-y: auto; /* Make the sidebar scrollable if content overflows */
-transition: left 0.3s ease-in-out; /* Smooth slide animation */
+transition: left 0.5s ease-in-out; /* Smooth slide animation */
 }
 
 /* Sidebar menu items */
