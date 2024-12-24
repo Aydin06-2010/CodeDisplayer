@@ -258,7 +258,7 @@ Folder.style.color = "";
 }
 
 // Define base screen dimensions for both landscape and portrait
-const LandScapeScreenWidth = 1317;
+/*const LandScapeScreenWidth = 1317;
 const LandScapeScreenHeight = 655; //568
 
 const PortraitScreenWidth = 823;
@@ -404,7 +404,7 @@ CalculateScaleFactors(); // Call the function after a delay
 // Add event listeners
 window.addEventListener("resize", handleResize);
 //window.addEventListener("orientationchange", handleResize); 
-
+*/
 
 // Set the event date in UTC format
 const eventDateUTC = new Date(Date.UTC(2024, 11, 16, 1, 0, 0)); // new Date("2024-12-16T07:00:00+06:00").getTime();
