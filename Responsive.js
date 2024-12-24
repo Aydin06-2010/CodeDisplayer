@@ -1,6 +1,3 @@
-const root = document.documentElement; // Reference to the :root (CSS variables)
-root.style.setProperty("--scroll-width", document.documentElement.scrollWidth + "px");
-root.style.setProperty("--scroll-height", document.documentElement.scrollHeight + "px");
 // Define base screen dimensions for both landscape and portrait
 const LandScapeScreenWidth = 1317;
 const LandScapeScreenHeight = 655; //568
