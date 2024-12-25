@@ -2,17 +2,17 @@
 font-family: "Space Grotesk"; 
 }
 
-html, body{
+/*html, body{
 margin: 0;
 padding: 0;
-height: 100%;
-}
+height: 100vh;
+}*/
 
 body {
+display: flex;
+height: 100vh;
 margin: 0;
 background: linear-gradient(to right, #222, #444); /* Mock background content */
-/*height: 100vh; /* Make the page scrollable */
-/*overflow-y: auto;*/
 color: white;
 }
 
