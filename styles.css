@@ -23,8 +23,8 @@ align-items: center;
 justify-content: center;
 position: absolute; 
 top: 125px;
-width: 100%;
-height: 100%;
+max-width: 100%;
+min-height: 100%;
 /*overflow-y: scroll;*/
 flex-direction: column; 
 /*margin-bottom: 16px;*/
