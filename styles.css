@@ -5,7 +5,7 @@ font-family: "Space Grotesk";
 html, body{
 margin: 0;
 padding: 0;
-height: auto;
+height: 100%;
 }
 
 body {
