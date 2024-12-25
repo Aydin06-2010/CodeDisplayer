@@ -20,7 +20,7 @@ color: white;
 display: flex;
 align-items: center;
 justify-content: center;
-position: absolute; 
+/*position: absolute; */
 top: 125px;
 width: 100%;
 /*min-height: 100%;
