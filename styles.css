@@ -10,7 +10,7 @@ height: 100vh;
 
 body {
 /*display: flex;*/
-height: 100vh;
+height: 100%;
 margin: 0;
 background: linear-gradient(to right, #222, #444); /* Mock background content */
 color: white;
