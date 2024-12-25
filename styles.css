@@ -10,10 +10,9 @@ height: 100%;
 
 body {
 margin: 0;
-font-family: monospace;
 background: linear-gradient(to right, #222, #444); /* Mock background content */
 /*height: 100vh; /* Make the page scrollable */
-overflow-y: auto;
+/*overflow-y: auto;*/
 color: white;
 }
 
