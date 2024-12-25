@@ -1,17 +1,3 @@
-function adjustBodyHeight() {
-    // Get the actual height of the document
-    const bodyHeight = document.documentElement.scrollHeight;
-
-    // Set the body height to the scroll height of the document
-    document.body.style.height = `${bodyHeight}px`;
-    console.log(bodyHeight);
-}
-
-// Adjust on page load
-window.addEventListener('load', adjustBodyHeight);
-
-// Adjust when the window is resized
-window.addEventListener('resize', adjustBodyHeight);
 // Define base screen dimensions for both landscape and portrait
 const LandScapeScreenWidth = 1317;
 const LandScapeScreenHeight = 655; //568
