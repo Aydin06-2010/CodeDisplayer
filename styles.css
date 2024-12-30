@@ -5,11 +5,12 @@ font-family: "Space Grotesk";
 html, body{
 margin: 0;
 padding: 0;
-height: auto;
+min-height: 100%;
 }
 
 body {
 margin: 0;
+height: 100vh; 
 background: linear-gradient(to right, #222, #444); /* Mock background content */
 color: white;
 }
