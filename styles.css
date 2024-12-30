@@ -2,12 +2,12 @@
 font-family: "Space Grotesk"; 
 }
 
-/*html, body{
-height:auto;
-}*/
+html, body{
+min-height:100%;
+}
 
 body {
-/*margin: 0;*/
+margin: 0;
 background: linear-gradient(to right, #222, #444); /* Mock background content */
 color: white;
 }
