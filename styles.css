@@ -13,6 +13,7 @@ body {
 margin: 0;
 background: linear-gradient(to right, #222, #444); /* Mock background content */
 color: white;
+box-sizing: border-box; 
 }
 
 .DinoGameCode{
